@@ -33,3 +33,17 @@
   .card{
     width: 16rem;
   }
+  .imgcal{
+    background-color: #F4F4F4;
+  }
+  .infocal{
+    background-color: white;
+  }
+  .textcal{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .minical{
+    font-style: oblique;
+    color: rgb(114, 114, 114);
+  }
