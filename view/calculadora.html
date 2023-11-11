@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tu huella</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/script.js"></script>
     <link rel="icon" href="/assets/img/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -21,9 +20,9 @@
     <!-- hero -->
     <div class="text-center bg-image rounded-3" style="
         background-image: url('/assets/img/heroc.webp');
-        height: 300px;
+        height: 350px;
       ">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.3); height: 300px;">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.3); height: 350px;">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
                     <h1 class="mb-3">¿Conoces tu huella de carbono?</h1>
@@ -34,10 +33,13 @@
     <!-- info -->
     <div class="row">
         <div class="col-6 col-md-4 imgcal">
-            <div class="d-flex justify-content-center align-items-center text-center mt-3" style="flex-direction: column; padding:70px;">
-                <img src="/assets/img/imgcal.jpg" alt="imagen de la calculadora" width="230px" style="border-radius: 5px;">
+            <div class="d-flex justify-content-center align-items-center text-center mt-3"
+                style="flex-direction: column; padding:70px;">
+                <img src="/assets/img/imgcal.jpg" alt="imagen de la calculadora" width="230px"
+                    style="border-radius: var(--border-r-ge);">
                 <h4 class="mt-3">Tu huella importa</h4>
-                <p class="mt- minical">Nuestras acciones cotidianas impactan en el planeta y en nuestra propia calidad de vida</p>
+                <p class="mt- minical">Nuestras acciones cotidianas impactan en el planeta y en nuestra propia calidad
+                    de vida</p>
             </div>
         </div>
         <div class="col-12 col-md-8 infocal">
@@ -54,41 +56,174 @@
                     natural y carbón) para generar electricidad, conducir automóviles, producir bienes y alimentos, y
                     llevar a cabo otras actividades cotidianas.
                 </p>
-                <p class="textcal">La huella de carbono se expresa en unidades de dióxido de carbono equivalente (CO2e) y se utiliza
+                <p class="textcal">La huella de carbono se expresa en unidades de dióxido de carbono equivalente (CO2e)
+                    y se utiliza
                     para evaluar el impacto ambiental de un individuo, una organización, un producto o un evento en
                     términos de su contribución al cambio climático y al calentamiento global.
                 </p>
             </div>
         </div>
-    </div>¡
-    <!-- calculadora -->
-    <h1>Calculadora de Huella de Carbono</h1>
-    <div id="calculator">
-        <label for="consumoEnergia">Consumo de Energía:</label>
-        <select id="consumoEnergia">
-            <option value="bajo">Bajo</option>
-            <option value="medio">Medio</option>
-            <option value="alto">Alto</option>
-        </select>
-
-        <label for="transporte">Transporte:</label>
-        <select id="transporte">
-            <option value="corto">Corto</option>
-            <option value="medio">Medio</option>
-            <option value="largo">Largo</option>
-        </select>
-
-        <label for="dieta">Dieta:</label>
-        <select id="dieta">
-            <option value="pocaCarne">Poca Carne</option>
-            <option value="moderadaCarne">Moderada Carne</option>
-            <option value="muchaCarne">Mucha Carne</option>
-        </select>
-
-        <button onclick="calcularHuella()">Calcular</button>
-
-        <h2>Tu Huella de Carbono mensual es: <span id="resultado">---</span></h2>
     </div>
+    <!-- Beneficios -->
+    <div class="benef" style="padding: 150px; padding-top: 75px;">
+        <h2 class="" style="text-align: center; margin-bottom:75px">Los beneficios de hacer un <span style="color: #45936C;">cambio</span></h2>
+        <div class="row benefr mt-5">
+            <div class="col-4 d-flex justify-content-center">
+                <div class="cardb">
+                    <h4 class="h4c" style="color: var(--green-ge);">Mitigación del Cambio Climático</h4>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div class="cardb">
+                    <h4 class="h4c">Ahorro de Energía y Dinero</h4>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div class="cardb">
+                    <h4 class="h4c" style="color: var(--green-ge);">Mitigación del Cambio Climático</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row benefr mt-5">
+            <div class="col-6 d-flex justify-content-center">
+                <div class="cardb">
+                    <h4 class="h4c">Mitigación del Cambio Climático</h4>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <div class="cardb">
+                    <h4 class="h4c"">Mitigación del Cambio Climático</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Calculadora -->
+    <div class="row">
+        <div class="col-12 col-md-8 calc d-flex justify-content-center align-items-center">
+            <div class="calculadora d-flex align-items-center" style="flex-direction: column; padding:70px;">
+                <h5>Calcula tu huella de carbono</h5>
+                <p class="minical">Y ayuda al medio ambiente mejorando tu habitos</p>
+                <button type="button" class="btn btn-primary btnc" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Empezar
+                </button>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 calback">
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header headerm">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Conoce tu huella de carbono</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="calculator">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">¿Cuánta electricidad utilizas al día?</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="electricidadDia">
+                                <option value="bajo">Bajo</option>
+                                <option value="medio">Medio</option>
+                                <option value="alto">Alto</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-4 col-form-label">¿Utilizas transporte público?</label>
+                        <div class="col-sm-2 d-flex align-items-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="transportePublico" id="transportePublicoSi" value="si">
+                                <label class="form-check-label" for="transportePublicoSi">Sí</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="transportePublico" id="transportePublicoNo" value="no">
+                                <label class="form-check-label" for="transportePublicoNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">¿Qué tan seguido utilizas el transporte público?</label>
+                        <div class="col-sm-2 d-flex align-items-center">
+                            <select class="form-control" id="frecuenciaTransporte">
+                                <option value="diario">Diario</option>
+                                <option value="semanal">Semanal</option>
+                                <option value="ocasional">Ocasionalmente</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-4 col-form-label">¿Tienes coche propio? ¿Con qué frecuencia lo utilizas?</label>
+                        <div class="col-sm-2 d-flex align-items-center">
+                            <select class="form-control" id="usoCoche">
+                                <option value="diario">Diario</option>
+                                <option value="semanal">Semanal</option>
+                                <option value="ocasional">Ocasionalmente</option>
+                                <option value="no">No tengo coche</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">¿Qué tan a menudo consumes carne?</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="consumoCarne">
+                                <option value="poco">Poco</option>
+                                <option value="moderado">Moderado</option>
+                                <option value="mucho">Mucho</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-4 col-form-label">¿Tienes aire acondicionado en casa?</label>
+                        <div class="col-sm-2 d-flex align-items-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="aireAcondicionado" id="aireAcondicionadoSi" value="si">
+                                <label class="form-check-label" for="aireAcondicionadoSi">Sí</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="aireAcondicionado" id="aireAcondicionadoNo" value="no">
+                                <label class="form-check-label" for="aireAcondicionadoNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">¿Cuántos vuelos haces al año?</label>
+                        <div class="col-sm-2 d-flex align-items-center">
+                            <select class="form-control" id="numVuelosAnio">
+                                <option value="ninguno">Ninguno</option>
+                                <option value="1-3">1-3</option>
+                                <option value="4-6">4-6</option>
+                                <option value="7-9">7-9</option>
+                                <option value="10+">10 o más</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-4 col-form-label">¿Cuántos productos plásticos consumes al día?</label>
+                        <div class="col-sm-2 d-flex align-items-center">
+                            <select class="form-control" id="consumoPlasticoDia">
+                                <option value="ninguno">Ninguno</option>
+                                <option value="1-3">1-3</option>
+                                <option value="4-6">4-6</option>
+                                <option value="7-9">7-9</option>
+                                <option value="10+">10 o más</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <h3>Tu Huella de Carbono:</h3>
+                    <ul>
+                        <li>Día: <span id="resultadoDia">---</span></li>
+                        <li>Mes: <span id="resultadoMes">---</span></li>
+                        <li>Año: <span id="resultadoAnio">---</span></li>
+                    </ul>
+                    <p id="recomendaciones"></p>
+                </div>            
+            </div>
+            <div class="modal-footer footerm">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button onclick="calcularHuella()" class="btnc btn">Calcular</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- calculadora -->
+    <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
