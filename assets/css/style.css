@@ -1,58 +1,133 @@
+:root {
+  --green-ge: #45936C;
+  --border-r-ge: 10px;
+  --gray-ge: #F4F4F4;
+  --black-ge: #37393F;
+  --blacked-ge: #2E2F34;
+}
+
+
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 40rem;
-  }
+  margin-bottom: 4rem;
+}
 
-  .hero{
-    background-color: white;
-    width: fit-content;
-    padding: 1.5rem;
-    border-radius: 10px;
-    opacity: 90%;
-  }
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
 
-  body{
-    --bs-body-bg: #E8F2E1;
-  }
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+}
 
-  .pj{
-    background-color: white;
-    border-radius: 10px;
-    padding: 1rem;
-  }
-  .card{
-    width: 16rem;
-  }
-  .imgcal{
-    background-color: #F4F4F4;
-  }
-  .infocal{
-    background-color: white;
-  }
-  .textcal{
-    text-align: justify;
-    text-justify: inter-word;
-  }
-  .minical{
-    font-style: oblique;
-    color: rgb(114, 114, 114);
-  }
+.hero {
+  background-color: white;
+  width: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+  opacity: 90%;
+}
 
-  h3{
-    color: black !important;
-  }
+body {
+  --bs-body-bg: #E8F2E1;
+}
 
-  .catalog-item-image{
-    width: 250px;
-    height: 140px;
-  }
+.pj {
+  background-color: white;
+  border-radius: var(--border-r-ge);
+  padding: 1rem;
+}
+
+.card {
+  width: 16rem;
+}
+
+.imgcal {
+  background-color: var(--gray-ge);
+}
+
+.infocal {
+  background-color: white;
+}
+
+.textcal {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.minical {
+  font-style: oblique;
+  color: rgb(114, 114, 114);
+}
+
+h3 {
+  color: black !important;
+}
+
+.catalog-item-image {
+  width: 250px;
+  height: 140px;
+}
+
+.benef {
+  background-color: white;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.cardb {
+  background-color: var(--gray-ge);
+  width: 300px;
+  border-radius: var(--border-r-ge);
+  padding: 10px;
+  text-align: center;
+}
+
+.calback {
+  background-image: url('https://i.pinimg.com/564x/36/13/33/361333a94b80b9d36630820691fbad46.jpg');
+  background-size: 100% 100%;
+}
+
+.calc {
+  background-color: var(--black-ge);
+  height: 400px;
+}
+
+.calculadora {
+  color: var(--gray-ge);
+  background-color: var(--blacked-ge);
+  border-radius: var(--border-r-ge);
+}
+
+.btnc {
+  background-color: var(--green-ge) !important;
+  border: 1px solid var(--green-ge) !important;
+  color: var(--gray-ge) !important;
+}
+
+.headerm {
+  background-color: var(--green-ge);
+  color: var(--blacked-ge);
+}
+
+.footerm {
+  background-color: var(--black-ge) !important;
+}
+
+.modal {
+  --bs-modal-width: 900px !important;
+}
+.form-check-input:checked {
+  background-color: var(--green-ge) !important;
+  border-color: var(--green-ge) !important;
+}
+.form-check-input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.20rem rgb(166, 225, 196) !important;
+}
