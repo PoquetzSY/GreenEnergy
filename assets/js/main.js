@@ -184,9 +184,11 @@ function mostrarResultados(huellaCarbonoDia, huellaMes, huellaAnio) {
 // Recomendaciones
 function mostrarRecomendaciones(huellaCarbonoDia,respuestas) {
     const recomendacionesElement = document.getElementById("recomendaciones");
-    let recomendaciones = "¡Buena noticia! Tu huella de carbono es baja. ";
+    let recomendaciones = "";
 
-    if (huellaCarbonoDia > 1) {
+    if (huellaCarbonoDia < 1){
+        recomendaciones = "¡Buena noticia! Tu huella de carbono es baja.";
+    }else if (huellaCarbonoDia >= 1) {
         recomendaciones = "Tu huella de carbono es significativa. Aquí hay algunas recomendaciones para reducirla:\n";
         if(huellaCarbonoDia > 2){
             recomendaciones = "Tu huella de carbono es relativamente alta. Aquí hay algunas recomendaciones para reducirla:\n";
