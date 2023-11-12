@@ -4,6 +4,7 @@
   --gray-ge: #F4F4F4;
   --black-ge: #37393F;
   --blacked-ge: #2E2F34;
+  --modalbg-ge: #ebebeb;
 }
 
 
@@ -113,7 +114,7 @@ h3 {
 
 .headerm {
   background-color: var(--green-ge);
-  color: var(--blacked-ge);
+  color: var(--gray-ge);
 }
 
 .footerm {
@@ -130,4 +131,14 @@ h3 {
 .form-check-input:focus {
   outline: 0;
   box-shadow: 0 0 0 0.20rem rgb(166, 225, 196) !important;
+}
+ul{
+  list-style-type: none;
+}
+
+.form-check-input{
+  background-color: var(--gray-ge) !important;
+}
+.form-control{
+  background-color: var(--gray-ge) !important;
 }
