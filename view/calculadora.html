@@ -92,7 +92,7 @@
             </div>
             <div class="col-6 d-flex justify-content-center">
                 <div class="cardb">
-                    <h4 class="h4c"">Mitigación del Cambio Climático</h4>
+                    <h4 class="h4c">Mitigación del Cambio Climático</h4>
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
                         <label class="col-sm-4 col-form-label">¿Utilizas transporte público?</label>
                         <div class="col-sm-2 d-flex align-items-center">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="transportePublico" id="transportePublicoSi" value="si">
+                                <input class="form-check-input" type="radio" name="transportePublico" id="transportePublicoSi" value="si" checked>
                                 <label class="form-check-label" for="transportePublicoSi">Sí</label>
                             </div>
                             <div class="form-check form-check-inline">
@@ -149,15 +149,16 @@
                                 <option value="diario">Diario</option>
                                 <option value="semanal">Semanal</option>
                                 <option value="ocasional">Ocasionalmente</option>
+                                <option value="nunca">Nunca</option>
                             </select>
                         </div>
                         <label class="col-sm-4 col-form-label">¿Tienes coche propio? ¿Con qué frecuencia lo utilizas?</label>
                         <div class="col-sm-2 d-flex align-items-center">
                             <select class="form-control" id="usoCoche">
+                                <option value="no">No tengo coche</option>
                                 <option value="diario">Diario</option>
                                 <option value="semanal">Semanal</option>
                                 <option value="ocasional">Ocasionalmente</option>
-                                <option value="no">No tengo coche</option>
                             </select>
                         </div>
                     </div>
@@ -177,7 +178,7 @@
                                 <label class="form-check-label" for="aireAcondicionadoSi">Sí</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="aireAcondicionado" id="aireAcondicionadoNo" value="no">
+                                <input class="form-check-input" type="radio" name="aireAcondicionado" id="aireAcondicionadoNo" value="no" checked>
                                 <label class="form-check-label" for="aireAcondicionadoNo">No</label>
                             </div>
                         </div>
@@ -216,14 +217,14 @@
                 </form>            
             </div>
             <div class="modal-footer footerm">
-                <button type="button" onclick="reiniciarFormulario()" class="btn btn-secondary" data-bs-dismiss="modal" id="btnReset">Cerrar</button>
-                <button onclick="calcularHuella()" class="btnc btn">Calcular</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnReset">Cerrar</button>
+                <button class="btnc btn" id="btnCalcular">Calcular</button>
             </div>
         </div>
         </div>
     </div>
     <!-- calculadora -->
-    <script src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
 </body>
 
 </html>
