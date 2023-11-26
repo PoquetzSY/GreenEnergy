@@ -116,11 +116,10 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header headerm">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Conoce tu huella de carbono</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Conoce tu huella de carbono</h1>
             </div>
             <div class="modal-body">
-                <div id="calculator">
+                <form id="calculator">
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label">¿Cuánta electricidad utilizas al día?</label>
                         <div class="col-sm-2">
@@ -204,18 +203,19 @@
                             </select>
                         </div>
                     </div>
-
-                    <h3>Tu Huella de Carbono:</h3>
-                    <ul>
-                        <li>Día: <span id="resultadoDia">---</span></li>
-                        <li>Mes: <span id="resultadoMes">---</span></li>
-                        <li>Año: <span id="resultadoAnio">---</span></li>
-                    </ul>
-                    <p id="recomendaciones"></p>
-                </div>            
+                    <div id="resultadosc" style="display: none;">
+                        <h3>Tu Huella de Carbono:</h3>
+                        <ul>
+                            <li>Día: <span id="resultadoDia"></span></li>
+                            <li>Mes: <span id="resultadoMes"></span></li>
+                            <li>Año: <span id="resultadoAnio"></span></li>
+                        </ul>
+                        <div id="recomendaciones"></div>
+                    </div>
+                </form>            
             </div>
             <div class="modal-footer footerm">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" onclick="reiniciarFormulario()" class="btn btn-secondary" data-bs-dismiss="modal" id="btnReset">Cerrar</button>
                 <button onclick="calcularHuella()" class="btnc btn">Calcular</button>
             </div>
         </div>
