@@ -145,6 +145,9 @@ ul{
 .form-control{
   background-color: var(--gray-ge) !important;
 }
+.divFooter{
+  background-color: var(--bs-body-bg);
+}
 .footer ul{
   justify-content: flex-end !important;
 }
