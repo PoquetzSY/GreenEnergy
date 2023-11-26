@@ -76,6 +76,9 @@ h3 {
 .benef {
   background-color: white;
 }
+.benefr{
+  margin-top: 3rem !important;
+}
 
 .row {
   margin-right: 0 !important;
@@ -141,4 +144,48 @@ ul{
 }
 .form-control{
   background-color: var(--gray-ge) !important;
+}
+.footer ul{
+  justify-content: flex-end !important;
+}
+
+@media (max-width: 800px) {
+  .imgcal{
+    width: 100% !important;
+    order: 6 !important;
+  }
+  .benef{
+    display: flex;
+    flex-direction: column;
+    padding: 30px !important;
+  }
+  .benef h2{
+    margin-bottom: 0 !important;
+  }
+  .benefr{
+    margin-top: 0 !important;
+    flex-direction: column;
+    align-content: center;
+  }
+  .benefr div{
+    width: 250px;
+    margin-top: 20px !important;
+  }
+  .mcolor{
+    color: var(--green-ge);
+  }
+  .calculadora h5, p{
+    text-align: center;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .footer p{
+    margin-bottom: 15px !important;
+  }
+
+  .footer ul{
+    justify-content: center !important;
+  }
+
 }
