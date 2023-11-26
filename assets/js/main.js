@@ -1,17 +1,27 @@
 import { calcularHuella, reiniciarFormulario } from '/assets/js/calculadora.js';
 
-// Header
-const headerContainer = document.createElement('header');
-fetch('/components/header.html')
-    .then(response => response.text())
-    .then(data => {
-        headerContainer.innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error al cargar el encabezado:', error);
-    });
-window.addEventListener('DOMContentLoaded', () => {
+// Cargar header y footer
+function cargarComponente(url, contenedor) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            contenedor.innerHTML = data;
+        })
+        .catch(error => {
+            console.error(`Error al cargar el componente desde ${url}:`, error);
+        });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const headerContainer = document.createElement('header');
+    const footerContainer = document.createElement('div');
+    footerContainer.classList.add('divFooter');
+
+    cargarComponente('/components/header.html', headerContainer);
+    cargarComponente('/components/footer.html', footerContainer);
+
     document.body.insertBefore(headerContainer, document.body.firstChild);
+    document.body.appendChild(footerContainer);
 });
 
 //Firebase
