@@ -26,10 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkname = window.location.pathname;
     if (linkname === '/index.html') {
         loadServices('/assets/json/services.json', 8);
-        console.log('Estás en el HOME.');
     } else {
         loadServices('/assets/json/services.json');
-        console.log('No estás en el HOME.');
     }
     
 });
