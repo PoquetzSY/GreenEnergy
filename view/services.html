@@ -18,64 +18,14 @@
 </head>
 
 <body>
-    <header>
-    </header>
-    <div class="container mt-5">
-        <div class="row" id="catalogo-container">
-            <!-- Las tarjetas se generarán aquí -->
+    <div class="p-4 catalog">
+        <h1>Servicios</h1>
+        <div class="row" id="catalogContainer">
+            <!-- catalogo -->
         </div>
     </div>
 
-
-    <script type="module">
-        // Configura Firebase con tus credenciales
-        const firebaseConfig = {
-            apiKey: "AIzaSyCJVzsoV9P7JtheTAuFohRoBZIgwFkYzm0",
-            authDomain: "greenenergy-5d9ae.firebaseapp.com",
-            projectId: "greenenergy-5d9ae",
-            storageBucket: "greenenergy-5d9ae.appspot.com",
-            messagingSenderId: "1016617479815",
-            appId: "1:1016617479815:web:10be57128ee6e92258d222"
-        };
-
-        // Inicializa Firebase
-        firebase.initializeApp(firebaseConfig);
-        // Referencia a la base de datos de Firebase
-        const db = firebase.firestore();
-        const catalogoCollection = db.collection('Servicios');
-
-        // Obtener los documentos de la colección en Firebase y generar las tarjetas
-        catalogoCollection.get().then((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-                const data = doc.data();
-
-                // Crear una tarjeta para cada documento
-                const card = document.createElement('div');
-                card.classList.add('col', 'mb-4');
-
-                // Contenido de la tarjeta
-                card.innerHTML = `
-                    <div class="card">
-                        <img src="${data.imagenURL}" alt="${data.nombreServicio}" class="card-img-top catalog-item-image">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <i class="bi bi-dash" style="color: #9acc77;"></i>
-                                <h6 style="color: #9acc77;">Servicios</h6>
-                            </div>
-                            <h5 class="card-title">${data.nombreServicio}</h5>
-                            <a href="${data.linkReferencia}" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                `;
-
-                // Agregar la tarjeta al contenedor del catálogo
-                document.getElementById('catalogo-container').appendChild(card);
-            });
-        });
-
-
-    </script>
-    <script src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
 </body>
 
 </html>

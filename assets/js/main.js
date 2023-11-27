@@ -1,4 +1,5 @@
 import { calcularHuella, reiniciarFormulario } from '/assets/js/calculadora.js';
+import { loadServices } from './services.js';
 
 // Cargar header y footer
 function cargarComponente(url, contenedor) {
@@ -11,7 +12,6 @@ function cargarComponente(url, contenedor) {
             console.error(`Error al cargar el componente desde ${url}:`, error);
         });
 }
-
 document.addEventListener('DOMContentLoaded', () => {
     const headerContainer = document.createElement('header');
     const footerContainer = document.createElement('div');
@@ -22,27 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.insertBefore(headerContainer, document.body.firstChild);
     document.body.appendChild(footerContainer);
+    
+    const linkname = window.location.pathname;
+    if (linkname === '/index.html') {
+        loadServices('/assets/json/services.json', 8);
+    } else {
+        loadServices('/assets/json/services.json');
+    }
+    
 });
 
-//Firebase
-
-
-// //doughnut
-// var ctxD = document.getElementById("doughnutChart").getContext('2d');
-// var myLineChart = new Chart(ctxD, {
-//   type: 'doughnut',
-//   data: {
-//     labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-//     datasets: [{
-//       data: [300, 50, 100, 40, 120],
-//       backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-//       hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-//     }]
-//   },
-//   options: {
-//     responsive: true
-//   }
-// });
 
 document.getElementById("btnCalcular").addEventListener("click", () => {
     calcularHuella();
