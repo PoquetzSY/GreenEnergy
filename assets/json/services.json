@@ -1,0 +1,256 @@
+{
+    "services":[
+        {
+            "name": "Iberdrola",
+            "images":[
+                {
+                    "hero": "https://www.iberdrolamexico.com/wp-content/uploads/2023/05/Diseno-sin-titulo.png",
+                    "imgp": "https://cdn.forbes.com.mx/2022/02/Iberdrola-Me%CC%81xico.png",
+                    "subimage": "https://www.bloomberglinea.com/resizer/vHspClbQi6vWgP8-IizY2C59wPQ=/600x0/filters:format(webp):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/FT24DZ7P4FFLDF5NGY3FINS5RQ.jpg"
+                }
+            ],
+            "title": "Pioneros en la transición energética",
+            "content": "Iberdrola México utiliza cuatro tipos de tecnologías para producir energía eléctrica: nuestras centrales de ciclo combinado y cogeneración lo hacen a través del uso de gas natural y vapor de agua, mientras que los parques eólicos lo hacen aprovechando las corrientes de viento y, finalmente, nuestros parques fotovoltaicos toman ventaja de la radiación solar.",
+            "subtitle": "Apostamos por el uso de fuentes inagotables como el viento y la radiación del sol para generar energía.",
+            "subcontent": "Nuestro objetivo es ofrecer soluciones energéticas competitivas, hechas a la medida, respetuosas del medio ambiente, diseñadas para generar ahorros en costos y maximizar el valor de los activos de las empresas.",
+            "servicios": [
+                {
+                    "first": "Mercado Eléctrico Mayorista",
+                    "second": "Smart Solar",
+                    "third": "Hidrógeno Verde"
+                }
+            ],
+            "contact": "Como sociedad subholding de Grupo Iberdrola, desde hace más de 20 años Iberdrola México ha trabajado en contribuir al desarrollo energético y sostenible de México a través de un suministro energético fiable, competitivo y sostenible. En la actualidad, Iberdrola México dispone en el país de una capacidad instalada de más de 11 GW a través de 17 centrales de ciclo combinado y cogeneraciones, 693 MW en siete parques eólicos y 470 MW en tres parques fotovoltaicos, con presencia en 15 estados del país.",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Enlight",
+            "images": [
+                {
+                    "hero": "https://www.enlight.mx/hs-fs/hubfs/01-Instalacio%CC%81n-de-paneles-solares_-Todo-lo-que-debes-saber-768x427.png.png?width=768&name=01-Instalacio%CC%81n-de-paneles-solares_-Todo-lo-que-debes-saber-768x427.png.png",
+                    "imgp": "https://www.enlight.mx/hubfs/puebla-acabados-rio-tejo--%282%29.png",
+                    "subimage": "https://www.enlight.mx/hubfs/Instalacio%CC%81n%201_Enlight%20%281%29.jpg"
+                }
+            ],
+            "title": "Instalación de paneles solares para industrias.",
+            "content": "Enlight es la empresa con mayor potencia solar instalada en Generación Distribuida de México. Cuenta con proyectos en más de 47 ciudades del país y ha instalado los techos solares más grandes de México, Chile, Colombia y Perú.",
+            "subtitle": "Garantizamos la cantidad de energía que producen los paneles solares o cubriremos la diferencia.",
+            "subcontent": "En Enlight tenemos la solución que necesita para ahorrar, reducir sus gastos operativos y tener certidumbre sobre el costo de la energía que consume.",
+            "servicios": [
+                {
+                    "first": "Instalación de paneles",
+                    "second": "Sistemas de almacenamiento",
+                    "third": "Mantenimiento"
+                }
+            ],
+            "contact": "Enlight es la empresa con mayor potencia solar instalada en Generación Distribuida de México. Cuenta con proyectos en más de 47 ciudades del país y ha instalado los techos solares más grandes de México, Chile y Perú.",
+            "links": [
+                {
+                    "home": "https://www.enlight.mx/",
+                    "contact": "https://www.enlight.mx/contacto"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 3",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 4",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 5",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 6",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 7",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 8",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        },
+        {
+            "name": "Servicio 9",
+            "images": [
+                {
+                    "hero": "imagen_hero1.jpg",
+                    "imgp": "imagen_imgp1.jpg",
+                    "subimage": "imagen_sub1.jpg"
+                }
+            ],
+            "title": "Título del Servicio 1",
+            "content": "Contenido del Servicio 1",
+            "subtitle": "Subtítulo del Servicio 1",
+            "subcontent": "Subcontenido del Servicio 1",
+            "servicios": [
+                {
+                    "first": "Primer servicio",
+                    "second": "Segundo servicio",
+                    "third": "Tercer servicio"
+                }
+            ],
+            "contact": "contacto@servicio1.com",
+            "links": [
+                {
+                    "home": "https://www.iberdrolamexico.com/",
+                    "contact": "https://www.iberdrolamexico.com/clientes/clientes-cotizacion/"
+                }
+            ]
+        }
+    ]
+}
