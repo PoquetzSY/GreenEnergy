@@ -35,7 +35,12 @@
   border-radius: 10px;
   opacity: 90%;
 }
-
+.slider-cards{
+  background-color: white;
+  padding: 1.5rem;
+  opacity: 90%;
+  border-radius: var(--border-r-ge);
+}
 body {
   --bs-body-bg: #E8F2E1;
 }
