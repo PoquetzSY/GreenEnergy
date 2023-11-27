@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(footerContainer);
     
     const linkname = window.location.pathname;
-    if (linkname === '/index.html') {
+    
+    if (linkname === '/') {
         loadServices('/assets/json/services.json', 8);
     } else {
         loadServices('/assets/json/services.json');
