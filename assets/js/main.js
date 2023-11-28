@@ -1,5 +1,6 @@
 import { calcularHuella, reiniciarFormulario } from '/assets/js/calculadora.js';
 import { loadServices } from './services.js';
+import { loadProjects } from './projects.js';
 
 // Cargar header y footer
 function cargarComponente(url, contenedor) {
@@ -27,8 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (linkname === '/') {
         loadServices('/assets/json/services.json', 8);
+        loadProjects('/assets/json/projects.json', 3)
     } else {
         loadServices('/assets/json/services.json');
+        loadProjects('/assets/json/projects.json')
     }
     
 });
