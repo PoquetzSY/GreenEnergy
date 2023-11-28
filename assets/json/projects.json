@@ -1,0 +1,228 @@
+{
+    "projects":[
+        {
+            "name": "Proyecto fotovoltaico 'La esperanza'",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "date": "NOV 28, 2023",
+            "links": [
+                {
+                    "home": "https://www.enerconin.com.mx/",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "Enel Green Power",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "https://www.enelgreenpower.com/es",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "",
+                    "contact": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "images": [
+                {
+                    "hero": "",
+                    "imgp": "",
+                    "subimage": ""
+                }
+            ],
+            "title": "",
+            "content": "",
+            "subtitle": "",
+            "subcontent": "",
+            "servicios": [
+                {
+                    "first": "",
+                    "second": "",
+                    "third": ""
+                }
+            ],
+            "contact": "",
+            "links": [
+                {
+                    "home": "",
+                    "contact": ""
+                }
+            ]
+        }
+    ]
+}
