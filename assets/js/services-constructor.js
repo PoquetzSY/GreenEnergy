@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const servicioTitulo = document.getElementById("servicio-title");
-    const servicioNombre = document.getElementById("servicio-nombre");
+    const servicioNombre = document.getElementById("servicio-url");
+    const servicioURL = document.getElementById("servicio-nombre");
     const servicioImagenPrin = document.getElementById("servicio-imagen-principal");
     const servicioImagenSec = document.getElementById("servicio-imagen-secundaria");
     const servicioContenido1 = document.getElementById("servicio-contenido1");
@@ -26,9 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (servicio) {
                 servicioTitulo.textContent = servicio.title;
                 servicioNombre.textContent = servicio.name;
+                servicioURL.textContent = servicio.name;
                 document.querySelector('.bg-image').style.backgroundImage = `url('${servicio.images[0].hero}')`;
                 servicioImagenPrin.src = servicio.images[0].imgp;
                 servicioImagenSec.src = servicio.images[0].subimage;
+                document.querySelector('.contactInfo').style.backgroundImage = `url('${servicio.images[0].subimage}')`;
                 servicioContenido1.textContent = servicio.content;
                 servicioSubtitulo1.textContent = servicio.subtitle;
                 servicioSubcontenido1.textContent = servicio.subcontent;
