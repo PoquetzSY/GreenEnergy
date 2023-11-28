@@ -18,6 +18,7 @@ function mostrarServicios(data, limit = Infinity) {
 
     for (let i = 0; i < serviciosMostrados; i++) {
         const service = data.services[i];
+        const nombreCodificado = encodeURIComponent(service.name);
         const cardCol = document.createElement('div');
         cardCol.classList.add('col-3', 'd-flex', 'justify-content-center');
         cardCol.innerHTML = `
@@ -29,7 +30,7 @@ function mostrarServicios(data, limit = Infinity) {
                         <h6 style="color: #9acc77;">Servicios</h6>
                     </div>
                     <h3>${service.name}</h3>
-                    <a href="${service.linkReferencia}" class="btn btn-outline-success">Ver más</a>
+                    <a href="/view/services-page.html?servicio=${nombreCodificado}" class="btn btn-outline-success">Ver más</a>
                 </div>
             </div>
         `;

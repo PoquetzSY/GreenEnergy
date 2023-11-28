@@ -162,8 +162,21 @@ ul{
 .card-body{
   background-color: var(--gray-ge);
 }
+.sPart1, .sPart2{
+  background-color: white;
+}
+.sPart2 img{
+  border-radius: var(--border-r-ge);
+  margin-bottom: 25px;
+}
+.sPart2 h5{
+  color: var(--green-ge);
+}
+.sPart2 .subimg{
+  width: 406px;
+}
 @media (max-width: 800px) {
-  .imgcal{
+  .imgcal, .sPart1{
     width: 100% !important;
     order: 6 !important;
   }
@@ -200,5 +213,7 @@ ul{
   .footer ul{
     justify-content: center !important;
   }
-
+  .sPart2 .subimg{
+    width: 314.4px;
+  }
 }
