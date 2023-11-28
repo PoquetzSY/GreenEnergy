@@ -20,7 +20,7 @@ function mostrarProyectos(data, limit = Infinity) {
         const project = data.projects[i];
         const nombreCodificado = encodeURIComponent(project.name);
         const cardCol = document.createElement('div');
-        cardCol.classList.add('col-3', 'd-flex', 'justify-content-center');
+        cardCol.classList.add('col-4', 'd-flex', 'justify-content-center');
         cardCol.innerHTML = `
             <div class="col">
                 <div class="container mt-4 pj">
