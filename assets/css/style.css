@@ -112,6 +112,11 @@ h3 {
   background-color: var(--green-ge) !important;
   border: 1px solid var(--green-ge) !important;
   color: var(--gray-ge) !important;
+  transition: transform 0.2s ease;
+}
+.btnc:hover{
+  cursor: pointer;
+  transform: scale(1.04);
 }
 
 .headerm {
