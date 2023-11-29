@@ -1,228 +1,47 @@
 {
     "projects":[
         {
-            "name": "Proyecto fotovoltaico 'La esperanza'",
+            "name": "La Esperanza",
             "images": [
                 {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
+                    "hero": "https://www.pv-magazine-mexico.com/wp-content/uploads/sites/10/2020/11/panoramica-II.jpg",
+                    "imgp": "https://www.pv-magazine-latam.com/wp-content/uploads/sites/3/2023/08/esperanza6.jpg"
                 }
             ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
+            "legend": "Casi cuatro años después de que asumiera el presidente mexicano, Andrés Manuel López Obrador, decenas de proyectos solares fotovoltaicos valorados en miles de millones de dólares se encuentran suspendidos.",
+            "moreinfo": "La Secretaría de Medio Ambiente y Recursos Naturales reporta la recepción del proyecto de evaluación de impacto ambiental que presenta la firma Mexsun Piedras Negras, para su propuesta de central fotovoltaica La Esperanza.",
+            "title": "Proyecto fotovoltaico 'La esperanza'",
+            "content": [
                 {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "one": "La Secretaría de Medio Ambiente y Recursos Naturales reporta la recepción del proyecto de evaluación de impacto ambiental que presenta la firma Mexsun Piedras Negras, para su propuesta de central fotovoltaica La Esperanza.",
+                    "two": "El desarrollo del proyecto se encuentra paralizado debido a problemas con los permisos asociados al entorno político mexicano, dijo a BNamericas Flavio Cházaro, gerente de Energía Aljaval para México, matriz de Tequila Solar PV. “Se va a desarrollar muy de a poco hasta que cambie la situación política”, agregó."
                 }
             ],
+            "subtitle": "¿En que consiste?",
+            "subcontent": "El proyecto consiste en la construcción de una planta fotovoltaica con 1,11 millones de paneles de 340Wp repartidos en una superficie de 1.134ha en Carmen, estado de Campeche. También incluye una línea de transmisión que se conectará al enlace Tabasco-Fuerza-Escárcega-Fuerza, propiedad de CFE.",
             "date": "NOV 28, 2023",
-            "links": [
-                {
-                    "home": "https://www.enerconin.com.mx/",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "Enel Green Power",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "https://www.enelgreenpower.com/es",
-                    "contact": ""
-                }
-            ]
+            "estado": "Estado de México"
         },
         {
             "name": "",
             "images": [
                 {
                     "hero": "",
-                    "imgp": "",
-                    "subimage": ""
+                    "imgp": ""
                 }
             ],
+            "legend": "",
+            "moreinfo": "",
             "title": "",
-            "content": "",
+            "content": [
+                {
+                    "one": "",
+                    "two": ""
+                }
+            ],
             "subtitle": "",
             "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
+            "date": "NOV 28, 2023"
         }
     ]
 }

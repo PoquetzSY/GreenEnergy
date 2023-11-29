@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const servicioEnlaceHome = document.getElementById("enlace-home");
     const servicioEnlaceContacto = document.getElementById("enlace-contacto");
 
-    cargarDatosServicios(archivoJSON)
+    loadDataServices(archivoJSON)
         .then((data) => {
             const params = new URLSearchParams(window.location.search);
             const servicioNombreCodificado = params.get("servicio");
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
-async function cargarDatosServicios(archivoJSON) {
+async function loadDataServices(archivoJSON) {
     try {
         const response = await fetch(archivoJSON);
         const jsonData = await response.json();
