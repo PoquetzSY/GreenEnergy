@@ -268,6 +268,12 @@ ul {
   border-width: 2px;
   border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
+.share{
+  margin-left: 10px;
+}
+#formCompartirHuella select{
+  text-align: center;
+}
 @media (max-width: 800px) {
 
   .imgcal,

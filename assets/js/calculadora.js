@@ -15,7 +15,7 @@ export function reiniciarFormulario() {
     ocultarResultados();
 }
 // Función para obtener las respuestas del usuario
-function obtenerRespuestas() {
+export function obtenerRespuestas() {
     return {
         electricidadDia: document.getElementById("electricidadDia").value,
         transportePublico: obtenerValorRadio("transportePublico"),
@@ -37,7 +37,7 @@ function obtenerValorRadio(radiovalue) {
     return null;
 }
 // Función para calcular la huella de carbono para un día
-function calcularHuellaDia(respuestas) {
+export function calcularHuellaDia(respuestas) {
     let huellaCarbonoDia = 0;
     switch (respuestas.electricidadDia) {
         case "bajo":
@@ -207,4 +207,9 @@ function mostrarRecomendaciones(huellaCarbonoDia,respuestas) {
 }
 function ocultarResultados() {
     document.getElementById("resultadosc").style.display = "none";
+    document.getElementById("formCompartirHuella").style.display = "none"
+    document.getElementById("share-h5").style.display = "none"
+    document.getElementById("exampleModalLabel").style.display = "block"
+    document.getElementById("calculator").style.display = "block"
+    document.getElementById("btnCalcular").style.display = "block"
 }
