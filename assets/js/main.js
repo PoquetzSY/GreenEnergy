@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loadProjects('/assets/json/projects.json')
     }
     iniciarCompartirHuella();
-
 });
 
 

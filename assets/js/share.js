@@ -29,7 +29,7 @@ export function iniciarCompartirHuella() {
     formCompartirHuella.addEventListener("submit", (event) => {
         event.preventDefault();
         inicializarFirebase()
-        const respuestas = obtenerRespuestas();
+        const respuestas = obtenerRespuestas(); 
         const huellaCarbonoDia = calcularHuellaDia(respuestas);
 
         const estadoSeleccionado = document.getElementById("estado").value;
@@ -48,7 +48,8 @@ export function inicializarFirebase() {
             projectId: "greenenergy-5d9ae",
             storageBucket: "greenenergy-5d9ae.appspot.com",
             messagingSenderId: "1016617479815",
-            appId: "1:1016617479815:web:10be57128ee6e92258d222"
+            appId: "1:1016617479815:web:c9c5870f198a404758d222",
+            measurementId: "G-EF034V3Q9Y"
         };
         firebaseApp = firebase.initializeApp(firebaseConfig);
     } else {
@@ -58,7 +59,7 @@ export function inicializarFirebase() {
 // Función para enviar datos a Firebase
 export async function enviarDatosAFirebase(huellaCarbonoDia, estadoSeleccionado) {
     const db = firebaseApp.firestore();
-    
+
     try {
         // Aquí puedes enviar los datos a tu base de datos de Firebase
         await db.collection('huellas').add({
@@ -71,3 +72,4 @@ export async function enviarDatosAFirebase(huellaCarbonoDia, estadoSeleccionado)
         console.error('Error al enviar datos a Firebase:', error);
     }
 }
+

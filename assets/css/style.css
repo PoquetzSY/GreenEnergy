@@ -156,6 +156,7 @@ ul {
 
 .divFooter {
   background-color: var(--green-ge-footer);
+  padding: 0 20px;
 }
 
 .footer ul {
