@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkname = window.location.pathname;
     
     if (linkname === '/') {
-        loadServices('/assets/json/services.json', 8);
+        loadServices('/assets/json/services.json', 4);
         loadProjects('/assets/json/projects.json', 3)
     } else {
         loadServices('/assets/json/services.json');

@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 servicioEnlaceHome.href = servicio.links[0].home;
                 servicioEnlaceContacto.href = servicio.links[0].contact;
             }
+            if(servicio.servicios[0].third === ""){
+                document.getElementById("third").style.visibility = "hidden"
+                console.log('se oculto correctamente')
+            }
         })
         .catch((error) => {
             console.error("Error al cargar los datos:", error);

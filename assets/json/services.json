@@ -57,228 +57,90 @@
             ]
         },
         {
-            "name": "ENERCON",
+            "name": "Vive Energia",
             "images": [
                 {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
+                    "hero": "https://www.energiaestrategica.com/wp-content/uploads/2021/01/pm_4_envision-4-750x406-1.jpg",
+                    "imgp": "https://www.viveenergia.com/assets/images/gallery/02.jpg",
+                    "subimage": "https://www.viveenergia.com/assets/images/gallery/01.jpg"
                 }
             ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
+            "title": "Enseñar a cuidar el medio ambiente es enseñar a valorar la vida",
+            "content": "Especialistas en asesoría, desarrollo, financiamiento, construcción, puesta en marcha y operación de proyectos de generación de energía eléctrica renovable con un alto enfoque en responsabilidad social y sostenibilidad ambiental. Vive Energía es una empresa 100% mexicana cuyos directivos a lo largo de su trayectoria profesional han sido responsables de la implementación de más de 2000 MW de energía renovable y limpia en México.",
+            "subtitle": "Vive solar",
+            "subcontent": "Actualmente Vive Energía se encuentra desarrollando proyectos de generación de energía renovable, operando activos energéticos y asesorando a clientes consumidores de energía en toda la república mexicana",
             "servicios": [
                 {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "Instalación de paneles solares",
+                    "second": "Asesoramiento",
+                    "third": "Suministro a través de mercado eléctrico mayorista (MEM)"
+
                 }
             ],
-            "contact": "",
+            "contact": "Vive Energía es una empresa 100% mexicana cuyos directivos a lo largo de su trayectoria profesional han sido responsables de la implementación de más de 2000 MW de energía renovable y limpia en México.",
             "links": [
                 {
-                    "home": "https://www.enerconin.com.mx/",
-                    "contact": ""
+                    "home": "https://www.viveenergia.com/#somos",
+                    "contact": "https://www.viveenergia.com/#contacto"
                 }
             ]
         },
         {
-            "name": "Enel Green Power",
+            "name": "Celsia",
             "images": [
                 {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
+                    "hero": "https://upload.wikimedia.org/wikipedia/commons/2/27/Celsia-energia.jpg",
+                    "imgp": "https://elcronista.co/assets/media/celsia-elecciones.jpeg",
+                    "subimage": "https://www.celsia.com/wp-content/uploads/2021/09/Somos-Celsia-la-energia-que-quieres.jpg"
                 }
             ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
+            "title": "Limpia, LImpia, Limpia",
+            "content": "Los paneles solares son módulos fotovoltaicos individuales que captan la energía que proporciona el sol convirtiéndola en electricidad. Están formados por celdas solares que a su vez contienen células solares individuales hechas de materiales semiconductores como el silicio (cristalino y amorfo) que transforman la luz (fotones) en energía eléctrica (electrones)",
+            "subtitle": " Celsia",
+            "subcontent": "En los panales solares, cuando hay luz solar, una célula solar se comporta casi como una batería. La luz solar recibida separa los electrones de modo que forman una capa de carga positiva y una de carga negativa en la célula solar; esta diferencia de potencial genera una corriente eléctrica.",
             "servicios": [
                 {
-                    "first": "",
-                    "second": "",
-                    "third": ""
+                    "first": "Instalación de paneles solares",
+                    "second": "Asesoramiento sobre energia",
+                    "third": "Internet Fibra Óptica"
                 }
             ],
-            "contact": "",
+            "contact": "Generamos, transmitimos y comercializamos energía eficiente de fuentes renovables (agua, sol y viento), con respaldo térmico en Colombia, Panamá, Costa Rica y Honduras. Estamos convencidos de que un mundo más sostenible sí es posible.",
             "links": [
                 {
-                    "home": "https://www.enelgreenpower.com/es",
-                    "contact": ""
+                    "home": "https://www.celsia.com/es/blog-celsia/paneles-solares-como-funcionan-y-que-son/",
+                    "contact": "https://www.celsia.com/es/blog-celsia/paneles-solares-como-funcionan-y-que-son/"
                 }
             ]
         },
         {
-            "name": "",
+            "name": "Biovalor",
             "images": [
                 {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
+                    "hero": "https://www.aimplas.es/wp-content/uploads/2023/09/modern-bio-comlex-renewable-energy-from-biomass-2022-10-06-04-29-54-utc.jpg",
+                    "imgp": "https://geniabioenergy.com/wp-content/uploads/2020/09/genia-biogas-header-post-950-x-478.png",
+                    "subimage": "https://fotografias.larazon.es/clipping/cmsimages02/2022/11/07/B9A33386-128F-4366-811C-34DE96D21F54/98.jpg?crop=4132,2325,x0,y290&width=1900&height=1069&optimize=low&format=webply"
                 }
             ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
+            "title": "Valorización de Residuos Orgánicos a través de Biogás",
+            "content": "Biovalor ofrece soluciones integrales para la valorización de residuos orgánicos mediante la generación de biogás. Nuestro servicio abarca desde la recolección de residuos hasta la implementación y gestión de sistemas de biodigestión anaeróbica. Utilizamos tecnologías avanzadas para convertir residuos orgánicos en biogás, una fuente de energía renovable.",
+            "subtitle": "Generación Sostenible de Energía",
+            "subcontent": "La generación de biogás no solo contribuye a la gestión responsable de residuos, sino que también proporciona una fuente limpia y renovable de energía. Nuestro proceso de biodigestión anaeróbica minimiza el impacto ambiental y maximiza la eficiencia en la producción de biogás.",
             "servicios": [
                 {
-                    "first": "",
-                    "second": "",
+                    "first": "Instalación de paneles solares",
+                    "second": "Asesoramiento",
                     "third": ""
                 }
             ],
-            "contact": "",
+            "contact": "BIOVALOR pretende impulsar la bioeconomía a través del desarrollo de nuevas cadenas de valor en torno a una gestión forestal sostenible y al cultivo de especies aromáticas autóctonas en tierras marginales para la producción de aceites esenciales, extractos y subproductos de alto valor añadido.",
             "links": [
                 {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
-                }
-            ]
-        },
-        {
-            "name": "",
-            "images": [
-                {
-                    "hero": "",
-                    "imgp": "",
-                    "subimage": ""
-                }
-            ],
-            "title": "",
-            "content": "",
-            "subtitle": "",
-            "subcontent": "",
-            "servicios": [
-                {
-                    "first": "",
-                    "second": "",
-                    "third": ""
-                }
-            ],
-            "contact": "",
-            "links": [
-                {
-                    "home": "",
-                    "contact": ""
+                    "home": "https://biovalor.es/",
+                    "contact": "https://biovalor.es/contacto"
                 }
             ]
         }
+
     ]
 }

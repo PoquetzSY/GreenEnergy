@@ -1,5 +1,5 @@
 {
-    "projects":[
+    "projects": [
         {
             "name": "La Esperanza",
             "images": [
@@ -23,25 +23,92 @@
             "estado": "Estado de México"
         },
         {
-            "name": "",
+            "name": "Potosi solar",
             "images": [
                 {
-                    "hero": "",
-                    "imgp": ""
+                    "hero": "https://frv.com/wp-content/uploads/2016/12/DJI_0196-scaled.jpg",
+                    "imgp": "https://www.typsa.com/wp-content/uploads/PotosiSolarWEB.jpg"
                 }
             ],
-            "legend": "",
-            "moreinfo": "",
-            "title": "",
+            "legend": "La planta fotovoltaica de 342 MW dc de potencia, está situada 120 km al noreste de Zacatecas, cerca del municipio de Villa de Ramos, en el Estado de San Luís de Potosí. El emplazamiento tiene una extensión de aproximadamente 850 hectáreas de terreno rural que actualmente se usa para ganadería.",
+            "moreinfo": "Fue el primer en proyecto fotovoltaico México",
+            "title": "’Proyecto fotovoltaico “Potosí solar”",
             "content": [
                 {
-                    "one": "",
-                    "two": ""
+                    "one": "El proyecto se adjudicó en la segunda subasta eléctrica realizada por el Centro Nacional de Control de Energía (CENACE), de México por una duración de 20 años.",
+                    "two": "El sitio en el que está localizada es ideal para poder exportar e integrar la energía solar generada por la planta en la red eléctrica nacional gracias a la conexión con la red de transmisión de 400kV."
                 }
             ],
-            "subtitle": "",
-            "subcontent": "",
-            "date": "NOV 28, 2023"
+            "subtitle": "Construcción",
+            "subcontent": "La planta fue construida por TSK y tiene una vida útil de 30 años. La construcción de la misma comenzó en 2018 y empezó operaciones en 2019",
+            "date": "NOV 29, 2023",
+            "estado": "Zacatecas"
+        },
+        {
+            "name": "La Yesca",
+            "images": [
+                {
+                    "hero": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Presa_la_Yesca1.jpg",
+                    "imgp": "https://pipsa.com.mx/wp-content/uploads/2020/03/unnamed-2.jpg"
+                }
+            ],
+            "legend": "La Hidroeléctrica La Yesca es un proyecto de generación de energía hidroeléctrica ubicado en los estados de Nayarit y Jalisco, México. Se trata de una infraestructura diseñada para aprovechar la energía del flujo de agua de la presa La Yesca, ubicada en el río Santiago. La central hidroeléctrica utiliza la caída del agua desde la presa para activar turbinas, generando así electricidad de manera limpia y renovable.",
+            "moreinfo": "La Hidroeléctrica La Yesca es una de las mayores instalaciones de generación hidroeléctrica en México. Su capacidad de generación de energía contribuye significativamente al suministro eléctrico del país, proporcionando una fuente constante de electricidad sin las emisiones de gases de efecto invernadero asociadas a las fuentes de energía más tradicionales.",
+            "title": "Central Hidroeléctrica 'La Yesca'",
+            "content": [
+                {
+                    "one": "La Presa La Yesca, oficialmente Proyecto Hidroeléctrico 'Alfredo Elías Ayub', es una presa y central hidroeléctrica ubicada en el cauce del Río Grande de Santiago en el municipio de La Yesca, Nayarit y Hostotipaquillo, Jalisco. Tiene una capacidad para generar 750 megawatts de energía eléctrica, con un embalse aproximado a 1,392 millones de metros cúbicos. Tuvo un costo aproximado de 768 millones de dólares. Esta presa es parte del sistema hidrológico del Río Grande de Santiago formado por la Presa Aguamilpa y la Presa El Cajón que en conjunto generan 4,300 MW. Fue inaugurada el 6 de noviembre de 2012.",
+                    "two": "Se excavaron 15 millones de metros cúbicos en roca, se colocaron 700 mil metros cúbicos de concreto, volumen equivalente a pavimentar con concreto hidráulico la autopista México-Querétaro con un espesor de 15 centímetros. Además, se instalaron anclas de acero para soportar el terreno inestable con una longitud de 500 km, equivalentes a recorrer la distancia entre la Ciudad de México y Guadalajara. A su vez, la obra incluyó la construcción de la cortina (obra de contención); obra de excedencias o vertedor; obra de desvío; obras de generación; equipamiento electromecánico; así como estructuras de cortante."
+                }
+            ],
+            "subtitle": "Beneficios Ambientales y Energéticos",
+            "subcontent": "La Hidroeléctrica La Yesca ofrece una serie de beneficios tanto ambientales como energéticos. La generación de energía hidroeléctrica es considerada una forma limpia de producir electricidad, ya que no produce emisiones directas de gases de efecto invernadero durante la operación normal. Además, al utilizar el flujo natural del agua, este proyecto minimiza el impacto ambiental en comparación con otras formas de generación de energía. La central hidroeléctrica también contribuye a la diversificación de la matriz energética de México, reduciendo la dependencia de fuentes de energía no renovables. Esto promueve la sostenibilidad a largo plazo y ayuda a mitigar los efectos del cambio climático al disminuir la emisión de contaminantes asociados con la quema de combustibles fósiles.",
+            "date": "NOV 29, 2023",
+            "estado": "Nayarit"
+        },
+        {
+            "name": "Don José",
+            "images": [
+                {
+                    "hero": "https://www.pv-magazine-mexico.com/wp-content/uploads/sites/10/2018/05/Don-Jos%C3%A9.jpg",
+                    "imgp": "https://www.elsoldelbajio.com.mx/local/fw6hxp-panel4/ALTERNATES/LANDSCAPE_768/PANEL4"
+                }
+            ],
+            "legend": "El Parque Solar Don José es una instalación de generación de energía solar ubicada en Guanajuato, México. Este proyecto utiliza tecnología fotovoltaica para convertir la energía solar en electricidad de manera sostenible. Con una extensa área cubierta por paneles solares, el parque contribuye significativamente a la capacidad de generación de energía renovable en la región.",
+            "moreinfo": "El Parque Solar Don José destaca por su escala y eficiencia. La disposición estratégica de los paneles solares y la ubicación geográfica óptima permiten maximizar la captura de la radiación solar, convirtiendo este proyecto en un ejemplo destacado de cómo la energía solar puede ser aprovechada de manera efectiva para satisfacer las demandas energéticas.",
+            "title": "Parque Solar 'Don José'",
+            "content": [
+                {
+                    "one": "Don José es la quinta planta de energía renovable puesta en marcha por Enel Green Power a nivel global en 2018, la cual eleva la capacidad total de puesta en servicio en el año, en un alrededor de 1 GW. La inversión para la construcción de Don José, que alcanzó la producción total cinco meses antes de lo previsto, ascendió a aproximadamente 220 millones de dólares estadounidenses. La planta cuenta con el respaldo de un contrato para la venta de volúmenes específicos de energía por 15 años y Certificados de Energía Limpia por 20 años con la Comisión Federal de Electricidad (CFE).",
+                    "two": "'Don José es uno de los proyectos más importantes de Enel Green Power en México, ya que es la segunda planta en iniciar operaciones después de la Reforma Energética del país, justo detrás de Villanueva, la mayor planta fotovoltaica del Grupo en el mundo', dijo Antonio Cammisecra, responsable de la división global de Energías Renovables de Enel, Enel Green Power. 'Con la inauguración de Don José, Enel está fortaleciendo su presencia en México y su compromiso de impulsar el desarrollo del sector de energía renovable del país. Somos la primera y única empresa en comenzar a operar los proyectos vinculados a los contratos adjudicados en la primera subasta antes del cronograma establecido. Como prueba más de nuestro compromiso, EGPM es también la única compañía que firmó acuerdos para la extensión del 10% de tres de sus proyectos, incluido Don José, como se prevé en estos contratos adjudicados'."
+                }
+            ],
+            "subtitle": "Contribución a la Sostenibilidad Energética",
+            "subcontent": "El parque solar desempeña un papel crucial en la transición hacia fuentes de energía más limpias y sostenibles. La energía generada por el Parque Solar Don José reduce la dependencia de fuentes de energía no renovables, contribuyendo así a la mitigación de las emisiones de gases de efecto invernadero y al avance de los objetivos de sostenibilidad en México. Además, la infraestructura del parque incorpora tecnologías avanzadas de monitoreo y gestión, lo que permite una operación eficiente y confiable a lo largo del tiempo. Este enfoque en la eficiencia operativa destaca el compromiso del proyecto no solo con la generación de energía limpia, sino también con prácticas sostenibles y responsables.",
+            "date": "NOV 29, 2023",
+            "estado": "Guanajuato"
+        },
+        {
+            "name": "Victoria",
+            "images": [
+                {
+                    "hero": "https://imagenes.elpais.com/resizer/u2jxrl9QKteORr0OBsN5h_8_GYE=/980x980/cloudfront-eu-central-1.images.arcpublishing.com/prisa/LY4WI6VIHJAQFLWBF7NEHFLKGE.jpg",
+                    "imgp": "https://cdn.milenio.com/uploads/media/2014/01/10/energia-sirve-consumo-edificios-parque.jpeg"
+                }
+            ],
+            "legend": "El Proyecto contempla el diseño, la construcción y la operación de un parque eólico con una capacidad de generación de 49.5 MW, mismo que formará parte de una obra de mayor magnitud que habrá de desarrollarse en la zona conocida como Mesa El Melón",
+            "moreinfo": "Solo existen dos parques eolicos",
+            "title": "Proyecto eolico ‘Victoria’",
+            "content": [
+                {
+                    "one": "La red eléctrica mexicana está dividida en nueve zonas y el proyecto propuesto se ubicará en la zona noreste, que abarca los estados de Tamaulipas, Nuevo León, una gran parte de Coahuila y algunos municipios de San Luis Potosí.",
+                    "two": "De acuerdo con el Programa de Obras e Inversiones del Sector Energético para 2012-2016 (POISE) de la Comisión Federal de Electricidad (CFE), en el año 2011, la capacidad de la zona noreste fue de 7,587 megavatios (MW) y en los cinco años anteriores, la zona experimentó una tasa media de crecimiento anual de 4.9% en su demanda de energía."
+                }
+            ],
+            "subtitle": "Beneficios",
+            "subcontent": "El Proyecto contribuirá al desplazamiento de gases de efecto invernadero (GEI) y otros contaminantes producidos por la generación de electricidad mediante procesos tradicionales que utilizan hidrocarburos, al tiempo de brindar a los residentes de la región fronteriza una alternativa de energía segura y confiable. Los resultados ambientales previstos con la implementación de este proyecto incluyen el desplazamiento de 72,345 toneladas métricas anuales de dióxido de carbono, 0.4 toneladas métricas anuales de dióxido de azufre y 252 toneladas métricas anuales de óxidos de nitrógeno.",
+            "date": "NOV 29, 2023",
+            "estado": "Tamaulipas"
         }
     ]
 }

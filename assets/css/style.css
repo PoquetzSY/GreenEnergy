@@ -171,6 +171,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s;
+}
+
+/* Agrega estilos al pasar el cursor por encima del enlace */
+.iconf a:hover {
+  transform: translateY(-4px);
 }
 
 .catalog {
@@ -275,6 +281,32 @@ ul {
 #formCompartirHuella select{
   text-align: center;
 }
+.regulaciones{
+  background-color: var(--gray-ge);
+  border-radius: var(--border-r-ge);
+  padding-bottom: 30px;
+}
+.regulaciones p{
+  text-align: justify;
+  color: var(--black-ge);
+}
+.regulaciones a{
+  text-decoration: none;
+  color: var(--blacked-ge);
+}
+
+.animation a {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+/* Agrega estilos al pasar el cursor por encima del enlace */
+.animation a:hover {
+  color: var(--green-ge-footer) !important;
+  transform: translateY(-4px);
+}
+
 @media (max-width: 800px) {
 
   .imgcal,

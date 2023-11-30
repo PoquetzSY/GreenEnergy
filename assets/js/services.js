@@ -23,7 +23,7 @@ function mostrarServicios(data, limit = Infinity) {
         cardCol.classList.add('col-3', 'd-flex', 'justify-content-center');
         cardCol.innerHTML = `
             <div class="card mt-4">
-                <img class="card-img-top" src="${service.images[0].hero}" alt="${service.name}">
+                <img class="card-img-top" src="${service.images[0].hero}" alt="${service.name}" height="137px">
                 <div class="card-body text-start">
                     <div class="d-flex">
                         <i class="bi bi-dash" style="color: #9acc77;"></i>
