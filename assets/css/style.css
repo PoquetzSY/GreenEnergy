@@ -41,7 +41,7 @@ body {
 }
 
 .card {
-  width: 16rem;
+  width: 18rem !important;
 }
 
 .imgcal {
@@ -300,13 +300,15 @@ ul {
   text-decoration: none;
   transition: transform 0.3s;
 }
+.carousel-item img{
+  filter: brightness(0.75);
+}
 
 /* Agrega estilos al pasar el cursor por encima del enlace */
 .animation a:hover {
   color: var(--green-ge-footer) !important;
   transform: translateY(-4px);
 }
-
 @media (max-width: 800px) {
 
   .imgcal,
@@ -349,10 +351,13 @@ ul {
 
   .footer {
     flex-direction: column;
+    align-content: center;
+
   }
 
   .footer p {
     margin-bottom: 15px !important;
+    text-align: center;
   }
 
   .footer ul {
@@ -379,7 +384,28 @@ ul {
     border-right: none;
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
   }
+  #projectsContainer{
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #projectsContainer .col-4{
+    width: 400px !important;
+  }
+  #catalogContainer{
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #catalogContainer .col-3{
+    width: 300px !important;
+  }
+  .offcanvas-body{
+    background-color: var(--gray-ge);
+  }
+  .carousel-item {
+    height: 25rem;
+  }
 }
+
 @media (min-width: 768px){
   .bordep{
     border-bottom: none;

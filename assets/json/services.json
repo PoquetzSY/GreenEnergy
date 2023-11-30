@@ -140,6 +140,90 @@
                     "contact": "https://biovalor.es/contacto"
                 }
             ]
+        },
+        {
+            "name": "Zitrone Energy",
+            "images": [
+                {
+                    "hero": "https://zitroneenergy.com/images/index/paneles-monitoreo-min.jpg",
+                    "imgp": "https://zitroneenergy.com/images/quienes/integral-1-min.jpg",
+                    "subimage": "https://zitroneenergy.com/images/diagnostico/zitrone-diagnostico.jpg"
+                }
+            ],
+            "title": "Auditoría y Mejora de Eficiencia Energética",
+            "content": "EcoEficiencia Energética se especializa en servicios de auditoría y mejora de la eficiencia energética para empresas y hogares. Nuestro equipo de expertos realiza evaluaciones detalladas para identificar oportunidades de ahorro energético. Implementamos soluciones personalizadas que no solo reducen los costos operativos, sino que también contribuyen a la sostenibilidad ambiental.",
+            "subtitle": "Optimización Personalizada",
+            "subcontent": "Nuestra aproximación única se centra en la optimización personalizada de los sistemas energéticos. Desde la iluminación hasta los sistemas HVAC, trabajamos en estrecha colaboración con nuestros clientes para implementar mejoras que maximicen la eficiencia y minimicen el impacto ambiental",
+            "servicios": [
+                {
+                    "first": "Diagnostico Eléctrico",
+                    "second": "Sistemas Fotovoltaicos",
+                    "third": "Monitoreo Energético"
+                }
+            ],
+            "contact": "Zitrone Energy es una empresa global experta en eficiencia energética a nivel industrial y comercial con corporativo en la Ciudad de México que ofrece servicio en toda la República Mexicana y LATAM.",
+            "links": [
+                {
+                    "home": "https://zitroneenergy.com/",
+                    "contact": "https://zitroneenergy.com/contacto.html"
+                }
+            ]
+        },
+        {
+            "name": "AES México",
+            "images": [
+                {
+                    "hero": "https://www.aesmex.com/sites/default/files/styles/16_9_landscape_xxl/public/2021-02/Panama-People-3.jpeg?h=8e9dfc49&itok=bCNwxarS",
+                    "imgp": "https://www.aesmex.com/sites/default/files/styles/16_9_landscape_xxl/public/2021-02/p2-aes-170612-146-scaled_0.jpg?h=7eabb7da&itok=T7o-seHL",
+                    "subimage": "https://www.aesmex.com/sites/default/files/styles/16_9_landscape_xxl/public/2021-01/Port-Bonython-Rollout-Birdseye-PS-2048x1150.jpg?h=eafd1ed7&itok=ZvlMm755"
+                }
+            ],
+            "title": "Soluciones Avanzadas de Almacenamiento de Energía",
+            "content": "AES México ofrece soluciones avanzadas de almacenamiento de energía que permiten optimizar la gestión de recursos energéticos. Nuestros servicios incluyen la implementación de sistemas de almacenamiento mediante baterías avanzadas y tecnologías de gestión de energía para mejorar la resiliencia, eficiencia y sostenibilidad.",
+            "subtitle": "Transformando la Distribución de Energía",
+            "subcontent": "Nos especializamos en transformar la distribución de energía a través de soluciones de almacenamiento innovadoras. Desde sistemas de baterías a escala de red hasta soluciones detrás del medidor, trabajamos con empresas e industrias para maximizar la eficiencia y la confiabilidad del suministro eléctrico.",
+            "servicios": [
+                {
+                    "first": "Redes avanzadas de energía",
+                    "second": "Green blend",
+                    "third": "Energía libre de carbono"
+                }
+            ],
+            "contact": "AES está comprometida con ofrecer soluciones de energía más inteligentes que funcionen para ti y tus prioridades, para acelerar tu futuro y garantizar el bienestar de las comunidades",
+            "links": [
+                {
+                    "home": "https://www.aesmex.com/es",
+                    "contact": "https://www.aesmex.com/es/contactanos"
+                }
+            ]
+        },
+        {
+            "name": "Sustenta Consultores",
+            "images": [
+                {
+                    "hero": "https://www.sustenta.com.mx/img/about-us-sustenta.jpg",
+                    "imgp": "https://www.sustenta.com.mx/img/servicios-sustenta.jpg",
+                    "subimage": "https://www.sustenta.com.mx/img/servicios/mantenimiento-y-pruebas-electricas-sustenta-1.jpg"
+                }
+            ],
+            "title": "Asesoramiento Integral en Energías Renovables",
+            "content": "Sustenta Consultores ofrece un asesoramiento integral en energías renovables para empresas y proyectos de todos los tamaños. Nuestros servicios incluyen análisis de viabilidad, planificación estratégica, gestión de proyectos y asesoría técnica especializada en energía solar, eólica, hidroeléctrica, y biomasa.",
+            "subtitle": "Impulsando la Transición Energética",
+            "subcontent": "Nos especializamos en impulsar la transición hacia fuentes de energía sostenibles. Desde la identificación de oportunidades hasta la implementación práctica, trabajamos de la mano de nuestros clientes para garantizar una adopción eficiente y rentable de soluciones de energías renovables.",
+            "servicios": [
+                {
+                    "first": "Mantenimiento y Pruebas Eléctricas",
+                    "second": "Construcción Eléctrica",
+                    "third": "Código de Red"
+                }
+            ],
+            "contact": "servicioaclientes@sustenta.com.mx",
+            "links": [
+                {
+                    "home": "https://www.sustenta.com.mx/",
+                    "contact": "https://www.facebook.com/mantenimientosustentamx"
+                }
+            ]
         }
 
     ]
