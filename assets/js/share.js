@@ -1,5 +1,6 @@
 import { calcularHuellaDia, obtenerRespuestas, reiniciarFormulario } from '/assets/js/calculadora.js';
-import { firebaseConfig } from './credentials.js';
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { db } from './firebase.js';
 
 export function iniciarCompartirHuella() {
     const btnCompartirHuella = document.getElementById("btnCompartirHuella");
@@ -22,7 +23,6 @@ export function iniciarCompartirHuella() {
     const formCompartirHuella = document.getElementById("formCompartirHuella");
     formCompartirHuella.addEventListener("submit", (event) => {
         event.preventDefault();
-        inicializarFirebase()
         const respuestas = obtenerRespuestas(); 
         const huellaCarbonoDia = calcularHuellaDia(respuestas);
 
@@ -33,26 +33,15 @@ export function iniciarCompartirHuella() {
         reiniciarFormulario();
     });
 }
-let firebaseApp;
-export function inicializarFirebase() {
-    if (!firebase.apps.length) {
-        firebaseApp = firebase.initializeApp(firebaseConfig);
-    } else {
-        firebaseApp = firebase.apps[0];
-    }
-}
-// Función para enviar datos a Firebase
+const huellasCollection = collection(db, 'huellas');
 export async function enviarDatosAFirebase(huellaCarbonoDia, estadoSeleccionado) {
-    const db = firebaseApp.firestore();
 
     try {
-        // Aquí puedes enviar los datos a tu base de datos de Firebase
-        await db.collection('huellas').add({
+        const docRef = await addDoc(huellasCollection, {
             huellaCarbono: huellaCarbonoDia,
             estado: estadoSeleccionado,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
         });
-        console.log('Datos enviados correctamente a Firebase');
+        console.log('Datos enviados correctamente a Firebase: ', docRef.id);
     } catch (error) {
         console.error('Error al enviar datos a Firebase:', error);
     }

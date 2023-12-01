@@ -1,3 +1,5 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 const firebaseConfig = {
     apiKey: "AIzaSyATmu_FBB2j1B0uAAGcS0N-T4hEpyKS34M",
     authDomain: "greenenergy-782952.firebaseapp.com",
@@ -8,4 +10,7 @@ const firebaseConfig = {
     measurementId: "G-C95ZBPB2D8"
 };
 
-export { firebaseConfig }
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export { db } 
