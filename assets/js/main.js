@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (linkname === '/') {
         loadServices('/assets/json/services.json', 4);
-        loadProjects('/assets/json/projects.json', 3)
+        loadProjects(3)
     } else {
         loadServices('/assets/json/services.json');
-        loadProjects('/assets/json/projects.json')
+        loadProjects()
     }
     iniciarCompartirHuella();
 });

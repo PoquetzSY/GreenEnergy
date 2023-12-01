@@ -181,6 +181,7 @@ ul {
 
 .catalog {
   width: 100%;
+  min-height: calc(100vh - 138px);
 }
 
 .card-body {
@@ -322,7 +323,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+}
+#projectsForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projectsForm input{
+  width: 300px;
 }
 @media (max-width: 800px) {
   #miLista{
