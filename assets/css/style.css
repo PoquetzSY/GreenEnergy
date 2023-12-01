@@ -180,6 +180,7 @@ ul {
 }
 
 .catalog {
+  min-height: calc(100vh - 138px);
   width: 100%;
 }
 

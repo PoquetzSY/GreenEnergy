@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(footerContainer);
     
     const linkname = window.location.pathname;
-    
+    console.log(linkname)
     if (linkname === '/') {
         loadServices('/assets/json/services.json', 4);
         loadProjects('/assets/json/projects.json', 3)
@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         loadServices('/assets/json/services.json');
         loadProjects('/assets/json/projects.json')
     }
+    if (linkname === '/view/projects.html'){
+        
+    }
+
     iniciarCompartirHuella();
 });
 
