@@ -34,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loadServices('/assets/json/services.json');
         loadProjects('/assets/json/projects.json')
     }
-    if (linkname === '/view/projects.html'){
-        
-    }
 
     iniciarCompartirHuella();
 });
