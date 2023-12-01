@@ -45,7 +45,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         const contador = contadorPorEstado.get(estado);
         // Crea un elemento de lista y agrega la información
         const listItem = document.createElement('li');
-        listItem.textContent = `Estado: ${estado}, Suma de Huellas de Carbono: ${suma.toFixed(2)}, Cantidad de Huellas: ${contador}`;
+        listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-start', 'listaHuellas');
+        listItem.innerHTML = `
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">${estado}</div>
+                <p>Impacto Total: ${suma.toFixed(2)} Toneladas de CO2</p>
+            </div>
+            <p class="mx-2">Huellas registradas</p>
+            <span class="badge rounded-pill counter">${contador}</span>
+        `;
 
         // Agrega el elemento de lista al elemento contenedor
         listaElemento.appendChild(listItem);
