@@ -2,6 +2,7 @@ import { calcularHuella, reiniciarFormulario } from './calculadora.js';
 import { loadServices } from './services.js';
 import { loadProjects } from './projects.js';
 import { iniciarCompartirHuella } from './share.js';
+import { UserService } from './firebase.js'
 
 // Cargar header y footer
 function cargarComponente(url, contenedor) {
@@ -14,7 +15,18 @@ function cargarComponente(url, contenedor) {
             console.error(`Error al cargar el componente desde ${url}:`, error);
         });
 }
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const querySnapshot = await UserService.getUsers()
+        querySnapshot.forEach(doc => {
+            //Dentro de este foreach generaras todo el html necesario para cada documento
+            console.log(doc.data())
+            console.log(doc.id)
+        });
+    } catch (error) {
+        console.log(error)
+        //Aqui puedes poner advertencias o casas parecidas
+    }
     const headerContainer = document.createElement('header');
     const footerContainer = document.createElement('div');
     footerContainer.classList.add('divFooter');
