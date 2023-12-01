@@ -2,7 +2,7 @@ import { db } from "./firebase.js";
 import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
 const projectsCollection = collection(db, 'Proyectos');
-const formulario = document.getElementById('miFormulario');
+const formulario = document.getElementById('projectsForm');
 formulario.addEventListener('submit', async (event) => {
     event.preventDefault();
 
