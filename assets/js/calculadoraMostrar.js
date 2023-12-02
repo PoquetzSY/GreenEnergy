@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     sumasOrdenadas.forEach((suma, estado) => {
         const contador = contadorPorEstado.get(estado);
         const listItem = document.createElement('li');
-        listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-start', 'listaHuellas');
+        listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center', 'listaHuellas');
         listItem.innerHTML = `
             <div class="ms-2 me-auto">
                 <div class="fw-bold">${estado}</div>

@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 const firebaseConfig = {
     apiKey: "AIzaSyATmu_FBB2j1B0uAAGcS0N-T4hEpyKS34M",
     authDomain: "greenenergy-782952.firebaseapp.com",
@@ -41,7 +41,7 @@ export class ProjectsService {
         });
         
     }
-    static async getUsers() {
-        return await getDocs(collection(db, "users"));
+    static async onGetProjects(callback) {
+        return await onSnapshot(collection(db, "Proyectos"), callback);
     }
 }

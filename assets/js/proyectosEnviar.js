@@ -1,6 +1,26 @@
 import { ProjectsService } from "./firebase.js";
 
 const formulario = document.getElementById('projectsForm');
+const ProjectsContainer = document.getElementById('showProjects')
+
+window.addEventListener('DOMContentLoaded', async () =>{
+
+    ProjectsService.onGetProjects((querySnapshot) => {
+        let html = "";
+    
+        querySnapshot.forEach(doc => {
+            const project = doc.data()
+            html += `
+                <li class="list-group-item d-flex">
+                    <h5 style="padding-left: 10px;">${project.name}</h5>
+                    <button>Borrar</button>
+                </li>
+            `;
+        });
+        ProjectsContainer.innerHTML = html;
+    })
+});
+
 formulario.addEventListener('submit', async (event) => {
     event.preventDefault();
 
