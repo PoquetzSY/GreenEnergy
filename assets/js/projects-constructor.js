@@ -26,8 +26,10 @@ const proyectoDocRef = doc(proyectosCollection, proyectoId);
 })();
 
 const proyectoDetalleContainer = document.getElementById("projectsDetails");
+const proyectoNombre = document.getElementById("proyecto-url");
 function mostrarDetallesProyecto(data) {
-    // Actualiza el contenido HTML con los detalles del proyecto
+    
+    proyectoNombre.textContent = data.name;
     proyectoDetalleContainer.innerHTML = `
         <div id="proyecto-imagen-hero" class="d-flex container-fluid" lc-helper="background"
             style="height:50vh;background:url(${data.images[0].hero})  center / cover no-repeat;">
