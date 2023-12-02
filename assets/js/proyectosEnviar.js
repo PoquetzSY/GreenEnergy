@@ -1,49 +1,25 @@
-import { db } from "./firebase.js";
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { ProjectsService } from "./firebase.js";
 
-const projectsCollection = collection(db, 'Proyectos');
 const formulario = document.getElementById('projectsForm');
 formulario.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const heroImage = document.getElementById('heroImage').value;
-    const thumbnailImage = document.getElementById('thumbnailImage').value;
-    const legend = document.getElementById('legend').value;
-    const title = document.getElementById('title').value;
-    const moreinfo = document.getElementById('moreinfo').value;
-    const contentOne = document.getElementById('contentOne').value;
-    const contentTwo = document.getElementById('contentTwo').value;
-    const subtitle = document.getElementById('subtitle').value;
-    const subcontent = document.getElementById('subcontent').value;
-    const date = document.getElementById('date').value;
-    const estado = document.getElementById('estado').value;
+    const name = projectsForm['name'].value;
+    const heroImage = projectsForm['heroImage'].value;
+    const thumbnailImage = projectsForm['thumbnailImage'].value;
+    const legend = projectsForm['legend'].value;
+    const title = projectsForm['title'].value;
+    const moreinfo = projectsForm['moreinfo'].value;
+    const contentOne = projectsForm['contentOne'].value;
+    const contentTwo = projectsForm['contentTwo'].value;
+    const subtitle = projectsForm['subtitle'].value;
+    const subcontent = projectsForm['subcontent'].value;
+    const date = projectsForm['date'].value;
+    const estado = projectsForm['estado'].value;
 
     try {
-        const docRef = await addDoc(projectsCollection, {
-            name: name,
-            images: [
-                {
-                    hero: heroImage,
-                    imgp: thumbnailImage
-                }
-            ],
-            legend: legend,
-            title: title,
-            moreinfo: moreinfo,
-            content: [
-                {
-                    one: contentOne,
-                    two: contentTwo
-                }
-            ],
-            subtitle: subtitle,
-            subcontent: subcontent,
-            date: date,
-            estado: estado
-        });
-
-        console.log("Documento agregado con ID: ", docRef.id);
+        ProjectsService.createProjects(name,heroImage,thumbnailImage,legend,title,moreinfo,contentOne,contentTwo,subtitle,subcontent,date,estado)
+        console.log("Documento agregado exitosamente :D");
         
         formulario.reset();
     } catch (e) {

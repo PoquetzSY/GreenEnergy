@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const params = new URLSearchParams(window.location.search);
             const servicioNombreCodificado = params.get("servicio");
 
-            // Decodifica el nombre del servicio desde la URL
             const servicioNombreId = decodeURIComponent(servicioNombreCodificado);
 
             const servicio = data.services.find((s) => s.name === servicioNombreId);
