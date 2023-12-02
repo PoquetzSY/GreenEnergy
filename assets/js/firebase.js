@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-import { getFirestore, collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, onSnapshot, doc, deleteDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 const firebaseConfig = {
     apiKey: "AIzaSyATmu_FBB2j1B0uAAGcS0N-T4hEpyKS34M",
     authDomain: "greenenergy-782952.firebaseapp.com",
@@ -43,5 +43,14 @@ export class ProjectsService {
     }
     static async onGetProjects(callback) {
         return await onSnapshot(collection(db, "Proyectos"), callback);
+    }
+    static async deleteProjects(id){
+        return await deleteDoc(doc(db, "Proyectos", id));
+    }
+    static async getProject (id){
+        return await getDoc(doc(db, "Proyectos", id));
+    }
+    static async updateProject(id, newFields){
+        return await updateDoc(doc(db, "Proyectos", id), newFields)
     }
 }

@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     iniciarCompartirHuella();
-    
 });
 
 
