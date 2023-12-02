@@ -1,13 +1,10 @@
 import { db } from "./firebase.js";
 import { doc, getDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
-
-// Obtén el ID del proyecto desde la URL
 const urlParams = new URLSearchParams(window.location.search);
 const proyectoId = urlParams.get('proyecto');
 
 const proyectosCollection = collection(db, 'Proyectos');
 
-// Obtén el documento del proyecto
 const proyectoDocRef = doc(proyectosCollection, proyectoId);
 
 (async () => {
@@ -27,7 +24,6 @@ const proyectoDocRef = doc(proyectosCollection, proyectoId);
 
 const proyectoDetalleContainer = document.getElementById("projectsDetails");
 function mostrarDetallesProyecto(data) {
-    // Actualiza el contenido HTML con los detalles del proyecto
     proyectoDetalleContainer.innerHTML = `
         <div id="proyecto-imagen-hero" class="d-flex container-fluid" lc-helper="background"
             style="height:50vh;background:url(${data.images[0].hero})  center / cover no-repeat;">

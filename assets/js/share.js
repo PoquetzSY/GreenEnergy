@@ -16,7 +16,7 @@ export function iniciarCompartirHuella() {
     const selectEstado = document.getElementById("estado");
     estados.forEach((estado) => {
         const opcion = document.createElement("option");
-        opcion.value = estado; // Puedes usar el mismo valor que el texto
+        opcion.value = estado;
         opcion.textContent = estado;
         selectEstado.appendChild(opcion);
     });

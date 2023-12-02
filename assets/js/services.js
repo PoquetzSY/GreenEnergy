@@ -1,4 +1,3 @@
-// Función para cargar y mostrar los servicios
 export async function loadServices(archivoJSON, limit) {
     try {
         const response = await fetch(archivoJSON);
@@ -10,7 +9,6 @@ export async function loadServices(archivoJSON, limit) {
     }
 }
 
-// Función para mostrar los servicios en HTML
 function mostrarServicios(data, limit = Infinity) {
     const container = document.getElementById("catalogContainer");
 

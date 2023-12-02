@@ -19,7 +19,6 @@ export async function loadProjects(limit) {
     }
 }
 
-// Función para mostrar los proyectos en HTML
 function mostrarProyectos(data, limit = Infinity) {
     const container = document.getElementById("projectsContainer");
 

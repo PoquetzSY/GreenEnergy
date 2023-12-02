@@ -3,7 +3,6 @@ import { loadServices } from './services.js';
 import { loadProjects } from './projects.js';
 import { iniciarCompartirHuella } from './share.js';
 
-// Cargar header y footer
 function cargarComponente(url, contenedor) {
     fetch(url)
         .then(response => response.text())
