@@ -1,8 +1,8 @@
 import { collection, addDoc, onSnapshot, doc, deleteDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 import { db } from './firebase.js'
 
-export class ProjectsService {
-    static async createProjects(name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink) {
+export class ServicesService {
+    static async createServices(name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink) {
         return await addDoc(collection(db, "Servicios"), {
             name: name,
             images: [
@@ -33,16 +33,16 @@ export class ProjectsService {
             
         });
     }
-    static async onGetProjects(callback) {
+    static async onGetServices(callback) {
         return await onSnapshot(collection(db, "Servicios"), callback);
     }
-    static async deleteProjects(id){
+    static async deleteServices(id){
         return await deleteDoc(doc(db, "Servicios", id));
     }
-    static async getProject (id){
+    static async getService (id){
         return await getDoc(doc(db, "Servicios", id));
     }
-    static async updateProject(id, newFields){
+    static async updateService(id, newFields){
         return await updateDoc(doc(db, "Servicios", id), newFields)
     }
 }

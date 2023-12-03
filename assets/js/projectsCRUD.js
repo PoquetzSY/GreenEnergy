@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         querySnapshot.forEach(doc => {
             const project = doc.data()
             html += `
-                <li class="list-group-item d-flex justify-content-between">
+                <li class="list-group-item d-flex justify-content-between mt-3">
                     <p style="padding-left: 10px;">${project.name}</p>
                     <div>
                         <button class="btnDelete btn btn-danger" data-id="${doc.id}">Borrar</button>
