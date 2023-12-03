@@ -325,6 +325,16 @@ ul {
   flex-direction: column;
   align-items: center;
 }
+#projectsForm{
+  background-color: var(--modalbg-ge);
+  border-radius: var(--border-r-ge);
+}
+.listPa{
+  background-color: var(--modalbg-ge);
+}
+.listPa li{
+  background-color: var(--modalbg-ge)
+}
 @media (max-width: 800px) {
   #miLista{
     width: 90%;

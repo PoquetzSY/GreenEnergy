@@ -1,4 +1,4 @@
-import { db } from "./firebase.js";
+import { db } from "./services/firebase.js";
 import { doc, getDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 const urlParams = new URLSearchParams(window.location.search);
 const proyectoId = urlParams.get('proyecto');

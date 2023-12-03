@@ -1,4 +1,4 @@
-import { db } from "./firebase.js";
+import { db } from "./services/firebase.js";
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
 const huellasCollection = collection(db, 'huellas');

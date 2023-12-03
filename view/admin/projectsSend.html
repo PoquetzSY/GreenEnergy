@@ -19,65 +19,174 @@
 <body>
     <div class="row">
         <div class="col-8 p-5">
-            <form id="projectsForm">
+            <h1>Crea un Proyecto</h1>
+            <form id="projectsForm" class="p-3">
                 <div class="form-group row mb-3">
-                    <label class="col-sm-1 col-form-label" for="name">Nombre: </label>
-                    <div class="col-sm-5">
-                        <input class="form-control" type="text" id="name" name="name" required>
+                    <div class="col-6">
+                        <label for="name">Nombre</label>
+                        <input class="form-control" type="text" id="name" name="name" required autocomplete="off">
                     </div>
-                    <label class="col-sm-1 col-form-label" for="title">Título: </label>
-                    <div class="col-sm-5">
-                        <input class="form-control" type="text" id="title" name="title" required>
+                    <div class="col-6">
+                        <label for="title">Título</label>
+                        <input class="form-control" type="text" id="title" name="title" required autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group row mb-3">
                     <div class="col-6">
-                        <label for="heroImage">Imagen principal:</label>
-                        <input class="form-control" type="text" id="heroImage" name="images[0][hero]" required>
+                        <label for="heroImage">Imagen principal</label>
+                        <input class="form-control" type="text" id="heroImage" name="images[0][hero]" required
+                            autocomplete="off">
                     </div>
-                    <dic class="col-6">
-                        <label for="thumbnailImage">Imagen de miniatura:</label>
-                        <input class="form-control" type="text" id="thumbnailImage" name="images[0][imgp]" required>
-                    </dic>
+                    <div class="col-6">
+                        <label for="thumbnailImage">Imagen de miniatura</label>
+                        <input class="form-control" type="text" id="thumbnailImage" name="images[0][imgp]" required
+                            autocomplete="off">
+                    </div>
                 </div>
-                
-        
-        
-                <label for="legend">Leyenda:</label>
-                <input type="text" id="legend" name="legend" required>
-        
-                <label for="legend">Informacion adicional:</label>
-                <input type="text" id="moreinfo" name="moreinfo" required>
-        
-                
-        
-                <label for="contentOne">Contenido Uno:</label>
-                <input type="text" id="contentOne" name="content[0][one]" required>
-        
-                <label for="contentTwo">Contenido Dos:</label>
-                <input type="text" id="contentTwo" name="content[0][two]" required>
-        
-                <label for="subtitle">Subtítulo:</label>
-                <input type="text" id="subtitle" name="subtitle" required>
-        
-                <label for="subcontent">Subcontenido:</label>
-                <input type="text" id="subcontent" name="subcontent" required>
-        
-                <label for="date">Fecha:</label>
-                <input type="date" id="date" name="date" required>
-        
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" required>
-        
-                <button type="submit" id="btn_Edit">Subir</button>
+                <div class="form-group row mb-3">
+                    <div class="col-6">
+                        <label for="legend">Leyenda</label>
+                        <input class="form-control" type="text" id="legend" name="legend" required autocomplete="off">
+                    </div>
+                    <div class="col-6">
+                        <label for="legend">Informacion adicional</label>
+                        <input class="form-control" type="text" id="moreinfo" name="moreinfo" required
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-6">
+                        <label for="contentOne">Contenido Uno</label>
+                        <input class="form-control" type="text" id="contentOne" name="content[0][one]" required
+                            autocomplete="off">
+                    </div>
+                    <div class="col-6">
+                        <label for="contentTwo">Contenido Dos</label>
+                        <input class="form-control" type="text" id="contentTwo" name="content[0][two]" required
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-6">
+                        <label for="subtitle">Subtítulo</label>
+                        <input class="form-control" type="text" id="subtitle" name="subtitle" required
+                            autocomplete="off">
+                    </div>
+                    <div class="col-6">
+                        <label for="subcontent">Subcontenido</label>
+                        <input class="form-control" type="text" id="subcontent" name="subcontent" required
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-6">
+                        <label for="date">Fecha</label>
+                        <input class="form-control" type="date" id="date" name="date" required autocomplete="off">
+                    </div>
+                    <div class="col-6">
+                        <label for="estado">Estado</label>
+                        <input class="form-control" type="text" id="estado" name="estado" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="pt-3 mx-3 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-success">Subir</button>
+                </div>
             </form>
         </div>
-        <div class="col-4">
-            <ul id="showProjects" class="list-group list-group-flush list-group-numbered">
+        <div class="col-4 p-4 listPa">
+            <h3>Lista de Proyectos</h3>
+            <ul id="showProjects" class="list-group list-group-flush list-group-numbered"></ul>
         </div>
     </div>
-
-    </ul>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header headerm">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Proyecto</h1>
+                </div>
+                <div class="modal-body">
+                    <form id="projectsFormEdit" class="p-3">
+                        <div class="form-group row mb-3">
+                            <div class="col-6">
+                                <label for="name">Nombre</label>
+                                <input class="form-control" type="text" id="name" name="name" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="title">Título</label>
+                                <input class="form-control" type="text" id="title" name="title" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-6">
+                                <label for="heroImage">Imagen principal</label>
+                                <input class="form-control" type="text" id="heroImage" name="images[0][hero]" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="thumbnailImage">Imagen de miniatura</label>
+                                <input class="form-control" type="text" id="thumbnailImage" name="images[0][imgp]"
+                                    required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-6">
+                                <label for="legend">Leyenda</label>
+                                <input class="form-control" type="text" id="legend" name="legend" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="legend">Informacion adicional</label>
+                                <input class="form-control" type="text" id="moreinfo" name="moreinfo" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-6">
+                                <label for="contentOne">Contenido Uno</label>
+                                <input class="form-control" type="text" id="contentOne" name="content[0][one]" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="contentTwo">Contenido Dos</label>
+                                <input class="form-control" type="text" id="contentTwo" name="content[0][two]" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-6">
+                                <label for="subtitle">Subtítulo</label>
+                                <input class="form-control" type="text" id="subtitle" name="subtitle" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="subcontent">Subcontenido</label>
+                                <input class="form-control" type="text" id="subcontent" name="subcontent" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-6">
+                                <label for="date">Fecha</label>
+                                <input class="form-control" type="date" id="date" name="date" required
+                                    autocomplete="off">
+                            </div>
+                            <div class="col-6">
+                                <label for="estado">Estado</label>
+                                <input class="form-control" type="text" id="estado" name="estado" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer footerm">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnReset">Cerrar</button>
+                    <button type="submit" class="btnc btn" id="btnEdit" data-bs-dismiss="modal">Realizar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="/assets/js/main-admin.js"></script>
     <script type="module" src="/assets/js/proyectosEnviar.js"></script>
 </body>
