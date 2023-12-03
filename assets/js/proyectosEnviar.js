@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             const project = doc.data()
             html += `
                 <li class="list-group-item d-flex justify-content-between">
-                    <p style="padding-left: 10px;">${project.title}</p>
+                    <p style="padding-left: 10px;">${project.name}</p>
                     <div>
                         <button class="btnDelete btn btn-danger" data-id="${doc.id}">Borrar</button>
                         <button type="button" class="btnEdit btn btn-warning" data-id="${doc.id}" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
