@@ -4,7 +4,6 @@ import { loadProjects } from './projects.js';
 import { iniciarCompartirHuella } from './share.js';
 import { UserService } from './firebase.js'
 
-// Cargar header y footer
 function cargarComponente(url, contenedor) {
     fetch(url)
         .then(response => response.text())
@@ -41,10 +40,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log(linkname)
     if (linkname === '/') {
         loadServices('/assets/json/services.json', 4);
-        loadProjects('/assets/json/projects.json', 3)
+        loadProjects(3)
     } else {
         loadServices('/assets/json/services.json');
-        loadProjects('/assets/json/projects.json')
+        loadProjects()
     }
 
     iniciarCompartirHuella();

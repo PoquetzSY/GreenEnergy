@@ -182,6 +182,7 @@ ul {
 .catalog {
   min-height: calc(100vh - 138px);
   width: 100%;
+  min-height: calc(100vh - 138px);
 }
 
 .card-body {
@@ -305,13 +306,30 @@ ul {
   filter: brightness(0.75);
 }
 
-/* Agrega estilos al pasar el cursor por encima del enlace */
 .animation a:hover {
   color: var(--green-ge-footer) !important;
   transform: translateY(-4px);
 }
+.counter{
+  background-color: var(--green-ge);
+  margin-right: 1.5rem;
+}
+#miLista{
+  width: 60%;
+  padding: 40px;
+  background-color: var(--gray-ge);
+  border-radius: var(--border-r-ge);
+}
+.secList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (max-width: 800px) {
-
+  #miLista{
+    width: 90%;
+    padding: 30px;
+  }
   .imgcal,
   .sPart1 {
     width: 100% !important;
