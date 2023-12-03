@@ -13,10 +13,12 @@ window.addEventListener('DOMContentLoaded', async () => {
         querySnapshot.forEach(doc => {
             const project = doc.data()
             html += `
-                <li class="list-group-item d-flex">
-                    <h5 style="padding-left: 10px;">${project.name}</h5>
-                    <button class="btnDelete" data-id="${doc.id}">Borrar</button>
-                    <button class="btnEdit" data-id="${doc.id}">Editar</button>
+                <li class="list-group-item d-flex justify-content-between">
+                    <h5 style="padding-left: 10px;">${project.title}</h5>
+                    <div>                    
+                        <button class="btnDelete  btn btn-danger" data-id="${doc.id}">Borrar</button>
+                        <button class="btnEdit btn btn-warning" data-id="${doc.id}">Editar</button>
+                    </div>
                 </li>
             `;
         });
