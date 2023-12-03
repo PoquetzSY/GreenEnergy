@@ -1,8 +1,8 @@
 import { ProjectsService } from "./services/projectsS.js";
 
 const formulario = document.getElementById('projectsForm');
+const formularioEdit = document.getElementById('projectsFormEdit');
 const ProjectsContainer = document.getElementById('showProjects')
-let Status = false;
 let id = ""
     
 window.addEventListener('DOMContentLoaded', async () => {
@@ -35,19 +35,20 @@ window.addEventListener('DOMContentLoaded', async () => {
                 const doc = await ProjectsService.getProject(e.target.dataset.id)
                 const project = doc.data()
 
-                projectsForm['name'].value = project.name;
-                projectsForm['heroImage'].value = project.images[0].hero;
-                projectsForm['thumbnailImage'].value = project.images[0].imgp;
-                projectsForm['legend'].value = project.legend;
-                projectsForm['title'].value = project.title;
-                projectsForm['moreinfo'].value = project.moreinfo;
-                projectsForm['contentOne'].value = project.content[0].one;
-                projectsForm['contentTwo'].value = project.content[0].two;
-                projectsForm['subtitle'].value = project.subtitle;
-                projectsForm['subcontent'].value = project.subcontent;
-                projectsForm['date'].value = project.date;
-                projectsForm['estado'].value = project.estado;
+                projectsFormEdit['name'].value = project.name;
+                projectsFormEdit['heroImage'].value = project.images[0].hero;
+                projectsFormEdit['thumbnailImage'].value = project.images[0].imgp;
+                projectsFormEdit['legend'].value = project.legend;
+                projectsFormEdit['title'].value = project.title;
+                projectsFormEdit['moreinfo'].value = project.moreinfo;
+                projectsFormEdit['contentOne'].value = project.content[0].one;
+                projectsFormEdit['contentTwo'].value = project.content[0].two;
+                projectsFormEdit['subtitle'].value = project.subtitle;
+                projectsFormEdit['subcontent'].value = project.subcontent;
+                projectsFormEdit['date'].value = project.date;
+                projectsFormEdit['estado'].value = project.estado;
                 id = doc.id
+                console.log(id)
             })
         })
     })
@@ -70,14 +71,33 @@ formulario.addEventListener('submit', async (event) => {
     const estado = projectsForm['estado'].value;
 
     try {
-        if (!Status) {
-            await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado);
-        } else {
-            await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado });
-            Status = false;
-        }
-
+        await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado);
         formulario.reset();
+    } catch (e) {
+        console.error("Error al agregar el documento: ", e);
+    }
+});
+
+formularioEdit.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const name = projectsFormEdit['name'].value;
+    const heroImage = projectsFormEdit['heroImage'].value;
+    const thumbnailImage = projectsFormEdit['thumbnailImage'].value;
+    const legend = projectsFormEdit['legend'].value;
+    const title = projectsFormEdit['title'].value;
+    const moreinfo = projectsFormEdit['moreinfo'].value;
+    const contentOne = projectsFormEdit['contentOne'].value;
+    const contentTwo = projectsFormEdit['contentTwo'].value;
+    const subtitle = projectsFormEdit['subtitle'].value;
+    const subcontent = projectsFormEdit['subcontent'].value;
+    const date = projectsFormEdit['date'].value;
+    const estado = projectsFormEdit['estado'].value;
+
+    try {
+        await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado });
+
+        formularioEdit.reset();
     } catch (e) {
         console.error("Error al agregar el documento: ", e);
     }
