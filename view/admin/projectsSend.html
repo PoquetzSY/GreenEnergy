@@ -17,46 +17,65 @@
 </head>
 
 <body>
-    <form id="projectsForm">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="heroImage">Imagen principal:</label>
-        <input type="text" id="heroImage" name="images[0][hero]" required>
-
-        <label for="thumbnailImage">Imagen de miniatura:</label>
-        <input type="text" id="thumbnailImage" name="images[0][imgp]" required>
-
-        <label for="legend">Leyenda:</label>
-        <input type="text" id="legend" name="legend" required>
-
-        <label for="legend">Informacion adicional:</label>
-        <input type="text" id="moreinfo" name="moreinfo" required>
-
-        <label for="title">Título:</label>
-        <input type="text" id="title" name="title" required>
-
-        <label for="contentOne">Contenido Uno:</label>
-        <input type="text" id="contentOne" name="content[0][one]" required>
-
-        <label for="contentTwo">Contenido Dos:</label>
-        <input type="text" id="contentTwo" name="content[0][two]" required>
-
-        <label for="subtitle">Subtítulo:</label>
-        <input type="text" id="subtitle" name="subtitle" required>
-
-        <label for="subcontent">Subcontenido:</label>
-        <input type="text" id="subcontent" name="subcontent" required>
-
-        <label for="date">Fecha:</label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado" required>
-
-        <button type="submit" id="btn_Edit">Subir</button>
-    </form>
-    <ul id="showProjects" class="list-group list-group-flush list-group-numbered">
+    <div class="row">
+        <div class="col-8 p-5">
+            <form id="projectsForm">
+                <div class="form-group row mb-3">
+                    <label class="col-sm-1 col-form-label" for="name">Nombre: </label>
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <label class="col-sm-1 col-form-label" for="title">Título: </label>
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" id="title" name="title" required>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-6">
+                        <label for="heroImage">Imagen principal:</label>
+                        <input class="form-control" type="text" id="heroImage" name="images[0][hero]" required>
+                    </div>
+                    <dic class="col-6">
+                        <label for="thumbnailImage">Imagen de miniatura:</label>
+                        <input class="form-control" type="text" id="thumbnailImage" name="images[0][imgp]" required>
+                    </dic>
+                </div>
+                
+        
+        
+                <label for="legend">Leyenda:</label>
+                <input type="text" id="legend" name="legend" required>
+        
+                <label for="legend">Informacion adicional:</label>
+                <input type="text" id="moreinfo" name="moreinfo" required>
+        
+                
+        
+                <label for="contentOne">Contenido Uno:</label>
+                <input type="text" id="contentOne" name="content[0][one]" required>
+        
+                <label for="contentTwo">Contenido Dos:</label>
+                <input type="text" id="contentTwo" name="content[0][two]" required>
+        
+                <label for="subtitle">Subtítulo:</label>
+                <input type="text" id="subtitle" name="subtitle" required>
+        
+                <label for="subcontent">Subcontenido:</label>
+                <input type="text" id="subcontent" name="subcontent" required>
+        
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+        
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+        
+                <button type="submit" id="btn_Edit">Subir</button>
+            </form>
+        </div>
+        <div class="col-4">
+            <ul id="showProjects" class="list-group list-group-flush list-group-numbered">
+        </div>
+    </div>
 
     </ul>
     <script type="module" src="/assets/js/main-admin.js"></script>
