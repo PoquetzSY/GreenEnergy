@@ -15,8 +15,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                 <li class="list-group-item d-flex justify-content-between">
                     <p style="padding-left: 10px;">${project.title}</p>
                     <div>
-                        <button class="btnDelete btn btn-danger" data-id="${doc.id}"><i class="bi bi-trash3-fill"></i></button>
-                        <button type="button" class="btnEdit btn btn-warning" data-id="${doc.id}" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square"></i></button>
+                        <button class="btnDelete btn btn-danger" data-id="${doc.id}">borrar</button>
+                        <button type="button" class="btnEdit btn btn-warning" data-id="${doc.id}" data-bs-toggle="modal" data-bs-target="#exampleModal">editar</button>
                     </div>
                 </li>
             `;
