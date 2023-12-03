@@ -1,10 +1,10 @@
-import { ProjectsService } from "./firebase.js";
+import { ProjectsService } from "./services/projectsS.js";
 
 const formulario = document.getElementById('projectsForm');
 const ProjectsContainer = document.getElementById('showProjects')
 let Status = false;
 let id = ""
-
+    
 window.addEventListener('DOMContentLoaded', async () => {
 
     ProjectsService.onGetProjects((querySnapshot) => {
@@ -78,11 +78,11 @@ formulario.addEventListener('submit', async (event) => {
 
     try {
         if (!Status) {
-            ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado);
-            console.log("Documento agregado exitosamente :D");
+            await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado);
         } else {
-            ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado });
+            await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado });
             Status = false;
+
         }
 
         formulario.reset();
