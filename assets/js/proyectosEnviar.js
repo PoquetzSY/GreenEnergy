@@ -47,14 +47,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                 projectsForm['subcontent'].value = project.subcontent;
                 projectsForm['date'].value = project.date;
                 projectsForm['estado'].value = project.estado;
-
-                Status = true;
                 id = doc.id
-                if(Status === true){
-                    projectsForm['btn_Edit'].innerHTML = 'Editar'
-                } else{
-                    projectsForm['btn_Edit'].innerHTML = 'Subir'
-                }
             })
         })
     })
@@ -82,7 +75,6 @@ formulario.addEventListener('submit', async (event) => {
         } else {
             await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado });
             Status = false;
-
         }
 
         formulario.reset();
