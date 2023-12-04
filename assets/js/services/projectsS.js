@@ -1,8 +1,8 @@
-import { collection, addDoc, onSnapshot, doc, deleteDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { collection, addDoc, onSnapshot, doc, deleteDoc, getDoc, updateDoc, Timestamp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 import { db } from './firebase.js'
 
 export class ProjectsService {
-    static async createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado) {
+    static async createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado) {
         return await addDoc(collection(db, "Proyectos"), {
             name: name,
             images: [
@@ -22,7 +22,7 @@ export class ProjectsService {
             ],
             subtitle: subtitle,
             subcontent: subcontent,
-            date: date,
+            date: Timestamp.now(),
             estado: estado
         });
     }

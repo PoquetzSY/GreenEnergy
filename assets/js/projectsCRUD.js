@@ -27,6 +27,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         btn_Delete.forEach(btn => {
             btn.addEventListener('click', ({ target: { dataset } }) => {
                 ProjectsService.deleteProjects(dataset.id);
+                console.log('Documento eliminado exitosamente')
             })
         })
 
@@ -46,7 +47,6 @@ window.addEventListener('DOMContentLoaded', async () => {
                 projectsFormEdit['contentTwo'].value = project.content[0].two;
                 projectsFormEdit['subtitle'].value = project.subtitle;
                 projectsFormEdit['subcontent'].value = project.subcontent;
-                projectsFormEdit['date'].value = project.date;
                 projectsFormEdit['estado'].value = project.estado;
 
                 id = doc.id
@@ -69,12 +69,12 @@ formulario.addEventListener('submit', async (event) => {
     const contentTwo = projectsForm['contentTwo'].value;
     const subtitle = projectsForm['subtitle'].value;
     const subcontent = projectsForm['subcontent'].value;
-    const date = projectsForm['date'].value;
     const estado = projectsForm['estado'].value;
 
     try {
-        await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado);
+        await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado);
         formulario.reset();
+        console.log('Documento agregado exitosamente')
     } catch (e) {
         console.error("Error al agregar el documento: ", e);
     }
@@ -93,12 +93,12 @@ document.getElementById('btnEdit').addEventListener('click', async (event) => {
     const contentTwo = projectsFormEdit['contentTwo'].value;
     const subtitle = projectsFormEdit['subtitle'].value;
     const subcontent = projectsFormEdit['subcontent'].value;
-    const date = projectsFormEdit['date'].value;
     const estado = projectsFormEdit['estado'].value;
 
     try {
-        await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, date, estado });
+        await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado });
         formularioEdit.reset();
+        console.log('Documento actualizado correctamente')
     } catch (e) {
         console.error("Error al actualizar el documento: ", e);
     }

@@ -21,10 +21,16 @@ const proyectoDocRef = doc(proyectosCollection, proyectoId);
         console.error('Error al cargar los detalles del proyecto:', error);
     }
 })();
-
 const proyectoDetalleContainer = document.getElementById("projectsDetails");
 const proyectoNombre = document.getElementById("proyecto-url");
 function mostrarDetallesProyecto(data) {
+    const fecha = new Date(data.date.toDate());
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    };
     proyectoNombre.textContent = data.name;
     proyectoDetalleContainer.innerHTML = `
         <div id="proyecto-imagen-hero" class="d-flex container-fluid" lc-helper="background"
@@ -43,7 +49,7 @@ function mostrarDetallesProyecto(data) {
                     <div class="lc-block ">
                         <div editable="rich">
                             <p class="display-4" id="proyecto-title-hero">${data.title}</p>
-                            <p id="proyecto-fecha" class="datep">${data.date}</p>
+                            <p id="proyecto-fecha" class="datep">${fecha.toLocaleDateString(undefined, options)}</p>
                         </div>
                     </div>
                 </div>

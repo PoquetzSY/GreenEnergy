@@ -20,12 +20,20 @@ export async function loadProjects(limit) {
 }
 
 function mostrarProyectos(data, limit = Infinity) {
+
     const container = document.getElementById("projectsContainer");
 
     const proyectosMostrados = Math.min(limit, data.length);
 
     for (let i = 0; i < proyectosMostrados; i++) {
         const project = data[i];
+        const fecha = new Date(project.date.toDate());
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+        };
         const cardCol = document.createElement('div');
         cardCol.classList.add('col-4', 'd-flex', 'justify-content-center');
         cardCol.innerHTML = `
@@ -37,7 +45,7 @@ function mostrarProyectos(data, limit = Infinity) {
                             <h6 style="color: #9acc77;">Proyectos</h6>
                         </div>
                         <h3>${project.name}</h3>
-                        <h6>${project.date}</h6>
+                        <h6>${fecha.toLocaleDateString(undefined, options)}</h6>
                         <a href="/view/projects-page.html?proyecto=${project.id}" class="btn btn-outline-success">Ver más</a>
                     </div>
                 </div>

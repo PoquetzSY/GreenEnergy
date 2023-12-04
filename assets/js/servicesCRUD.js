@@ -27,6 +27,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         btn_Delete.forEach(btn => {
             btn.addEventListener('click', ({ target: { dataset } }) => {
                 ServicesService.deleteServices(dataset.id);
+                console.log('Documento eliminado exitosamente')
             })
         })
 
@@ -34,20 +35,22 @@ window.addEventListener('DOMContentLoaded', async () => {
         btn_Edit.forEach(btn => {
             btn.addEventListener('click', async (e) => {
                 const doc = await ServicesService.getService(e.target.dataset.id)
-                const project = doc.data()
+                const service = doc.data()
 
-                servicesFormEdit['name'].value = project.name;
-                servicesFormEdit['heroImage'].value = project.images[0].hero;
-                servicesFormEdit['thumbnailImage'].value = project.images[0].imgp;
-                servicesFormEdit['legend'].value = project.legend;
-                servicesFormEdit['title'].value = project.title;
-                servicesFormEdit['moreinfo'].value = project.moreinfo;
-                servicesFormEdit['contentOne'].value = project.content[0].one;
-                servicesFormEdit['contentTwo'].value = project.content[0].two;
-                servicesFormEdit['subtitle'].value = project.subtitle;
-                servicesFormEdit['subcontent'].value = project.subcontent;
-                servicesFormEdit['date'].value = project.date;
-                servicesFormEdit['estado'].value = project.estado;
+                servicesFormEdit['name'].value = service.name;
+                servicesFormEdit['heroImage'].value = service.images[0].hero;
+                servicesFormEdit['thumbnailImage'].value = service.images[0].imgp;
+                servicesFormEdit['subImage'].value = service.images[0].subimage;
+                servicesFormEdit['title'].value = service.title;
+                servicesFormEdit['contentP'].value = service.content;
+                servicesFormEdit['subtitle'].value = service.subtitle;
+                servicesFormEdit['subcontent'].value = service.subcontent;
+                servicesFormEdit['firstS'].value = service.servicios[0].first;
+                servicesFormEdit['secondS'].value = service.servicios[0].second;
+                servicesFormEdit['thirdS'].value = service.servicios[0].third;
+                servicesFormEdit['contact'].value = service.contact;
+                servicesFormEdit['home'].value = service.links[0].home;
+                servicesFormEdit['contactLink'].value = service.links[0].contact;
 
                 id = doc.id
                 console.log(id)
@@ -70,13 +73,14 @@ formulario.addEventListener('submit', async (event) => {
     const firstS = servicesForm['firstS'].value;
     const secondS = servicesForm['secondS'].value;
     const thirdS = servicesForm['thirdS'].value;
-    const contact = servicesForm['date'].value;
+    const contact = servicesForm['contact'].value;
     const home = servicesForm['home'].value;
     const contactLink = servicesForm['contactLink'].value;
 
     try {
         await ServicesService.createServices(name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink);
         formulario.reset();
+        console.log('Documento agregado exitosamente')
     } catch (e) {
         console.error("Error al agregar el documento: ", e);
     }
@@ -96,13 +100,14 @@ document.getElementById('btnEdit').addEventListener('click', async (event) => {
     const firstS = servicesFormEdit['firstS'].value;
     const secondS = servicesFormEdit['secondS'].value;
     const thirdS = servicesFormEdit['thirdS'].value;
-    const contact = servicesFormEdit['date'].value;
+    const contact = servicesFormEdit['contact'].value;
     const home = servicesFormEdit['home'].value;
     const contactLink = servicesFormEdit['contactLink'].value;
 
     try {
         await ServicesService.updateService(id, { name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink });
         formularioEdit.reset();
+        console.log('Documento actualizado correctamente')
     } catch (e) {
         console.error("Error al actualizar el documento: ", e);
     }

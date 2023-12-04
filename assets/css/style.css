@@ -325,7 +325,7 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-#projectsForm{
+#projectsForm, #servicesForm{
   background-color: var(--modalbg-ge);
   border-radius: var(--border-r-ge);
 }
