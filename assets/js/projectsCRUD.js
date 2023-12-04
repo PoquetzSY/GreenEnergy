@@ -70,13 +70,28 @@ formulario.addEventListener('submit', async (event) => {
     const subtitle = projectsForm['subtitle'].value;
     const subcontent = projectsForm['subcontent'].value;
     const estado = projectsForm['estado'].value;
-
-    try {
-        await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado);
-        formulario.reset();
-        console.log('Documento agregado exitosamente')
-    } catch (e) {
-        console.error("Error al agregar el documento: ", e);
+    if (
+        name.trim() === '' ||
+        heroImage.trim() === '' ||
+        thumbnailImage.trim() === '' ||
+        legend.trim() === '' ||
+        title.trim() === '' ||
+        moreinfo.trim() === '' ||
+        contentOne.trim() === '' ||
+        contentTwo.trim() === '' ||
+        subtitle.trim() === '' ||
+        subcontent.trim() === '' ||
+        estado.trim() === ''
+    ) {
+        alert('Por favor, complete todos los campos.');
+    } else {
+        try {
+            await ProjectsService.createProjects(name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado);
+            formulario.reset();
+            console.log('Documento agregado exitosamente')
+        } catch (e) {
+            console.error("Error al agregar el documento: ", e);
+        }
     }
 });
 
@@ -94,13 +109,28 @@ document.getElementById('btnEdit').addEventListener('click', async (event) => {
     const subtitle = projectsFormEdit['subtitle'].value;
     const subcontent = projectsFormEdit['subcontent'].value;
     const estado = projectsFormEdit['estado'].value;
-
-    try {
-        await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado });
-        formularioEdit.reset();
-        console.log('Documento actualizado correctamente')
-    } catch (e) {
-        console.error("Error al actualizar el documento: ", e);
+    if (
+        name.trim() === '' ||
+        heroImage.trim() === '' ||
+        thumbnailImage.trim() === '' ||
+        legend.trim() === '' ||
+        title.trim() === '' ||
+        moreinfo.trim() === '' ||
+        contentOne.trim() === '' ||
+        contentTwo.trim() === '' ||
+        subtitle.trim() === '' ||
+        subcontent.trim() === '' ||
+        estado.trim() === ''
+    ) {
+        alert('Por favor, complete todos los campos.');
+    } else {
+        try {
+            await ProjectsService.updateProject(id, { name, heroImage, thumbnailImage, legend, title, moreinfo, contentOne, contentTwo, subtitle, subcontent, estado });
+            formularioEdit.reset();
+            console.log('Documento actualizado correctamente')
+        } catch (e) {
+            console.error("Error al actualizar el documento: ", e);
+        }
     }
 });
 

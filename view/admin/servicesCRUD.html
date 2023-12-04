@@ -35,7 +35,7 @@
                     <label class="col-form-label col-sm-3" for="heroImage">Imagen principal:</label>
                     <div class="col-sm-9 mb-3">
                         <input class="form-control" type="text" id="heroImage" name="images[0][hero]" required
-                        autocomplete="off">
+                            autocomplete="off">
                     </div>
                     <label class="col-form-label col-sm-3" for="thumbnailImage">Imagen de miniatura:</label>
                     <div class="col-sm-9 mb-3">
@@ -52,9 +52,10 @@
                     <h3>Contenido</h3>
                     <label for="contentP">Contenido Principal</label>
                     <div class="col-12">
-                        <input class="form-control" type="text" id="contentP" name="contentP" required autocomplete="off">
+                        <input class="form-control" type="text" id="contentP" name="contentP" required
+                            autocomplete="off">
                     </div>
-                    
+
                 </div>
                 <div class="form-group row mb-3">
                     <div class="col-6">
@@ -72,18 +73,15 @@
                     <h3>Lista de Servicios</h3>
                     <label class="col-form-label col-sm-3" for="firstS">Primer Servicio</label>
                     <div class="col-9 mb-3">
-                        <input class="form-control" type="text" id="firstS" name="firstS" required
-                            autocomplete="off">
+                        <input class="form-control" type="text" id="firstS" name="firstS" required autocomplete="off">
                     </div>
                     <label class="col-form-label col-sm-3" for="secondS">Segundo Servicio</label>
                     <div class="col-9 mb-3">
-                        <input class="form-control" type="text" id="secondS" name="secondS" required
-                            autocomplete="off">
+                        <input class="form-control" type="text" id="secondS" name="secondS" required autocomplete="off">
                     </div>
                     <label class="col-form-label col-sm-3" for="thirdS">Tercer Servicio</label>
                     <div class="col-9 mb-3">
-                        <input class="form-control" type="text" id="thirdS" name="thirdS" required
-                            autocomplete="off">
+                        <input class="form-control" type="text" id="thirdS" name="thirdS" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group row mb-3">
@@ -100,11 +98,12 @@
                     </div>
                     <div class="col-6">
                         <label for="contactLink">Pagina de Contacto</label>
-                        <input class="form-control" type="text" id="contactLink" name="contactLink" required autocomplete="off">
+                        <input class="form-control" type="text" id="contactLink" name="contactLink" required
+                            autocomplete="off">
                     </div>
                 </div>
                 <div class="pt-3 mx-3 d-flex justify-content-end">
-                    <button type="submit" class="btn btn-success">Subir</button>
+                    <button type="submit" class="btn btn-success">Registrar</button>
                 </div>
             </form>
         </div>
@@ -128,46 +127,37 @@
                                     autocomplete="off">
                             </div>
                             <div class="col-6">
-                                <label for="title">Título</label>
+                                <label for="title">Título del Contenido</label>
                                 <input class="form-control" type="text" id="title" name="title" required
                                     autocomplete="off">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
-                            <div class="col-6">
-                                <label for="heroImage">Imagen principal</label>
+                            <h3>Imagenes</h3>
+                            <label class="col-form-label col-sm-3" for="heroImage">Imagen principal:</label>
+                            <div class="col-sm-9 mb-3">
                                 <input class="form-control" type="text" id="heroImage" name="images[0][hero]" required
                                     autocomplete="off">
                             </div>
-                            <div class="col-6">
-                                <label for="thumbnailImage">Imagen de miniatura</label>
+                            <label class="col-form-label col-sm-3" for="thumbnailImage">Imagen de miniatura:</label>
+                            <div class="col-sm-9 mb-3">
                                 <input class="form-control" type="text" id="thumbnailImage" name="images[0][imgp]"
+                                    required autocomplete="off">
+                            </div>
+                            <label class="col-form-label col-sm-3" for="subImage">Imagen de Servicios:</label>
+                            <div class="col-sm-9 mb-3">
+                                <input class="form-control" type="text" id="subImage" name="images[0][subimage]"
                                     required autocomplete="off">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
-                            <div class="col-6">
-                                <label for="legend">Leyenda</label>
-                                <input class="form-control" type="text" id="legend" name="legend" required
+                            <h3>Contenido</h3>
+                            <label for="contentP">Contenido Principal</label>
+                            <div class="col-12">
+                                <input class="form-control" type="text" id="contentP" name="contentP" required
                                     autocomplete="off">
                             </div>
-                            <div class="col-6">
-                                <label for="moreinfo">Informacion adicional</label>
-                                <input class="form-control" type="text" id="moreinfo" name="moreinfo" required
-                                    autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="form-group row mb-3">
-                            <div class="col-6">
-                                <label for="contentOne">Contenido Uno</label>
-                                <input class="form-control" type="text" id="contentOne" name="content[0][one]" required
-                                    autocomplete="off">
-                            </div>
-                            <div class="col-6">
-                                <label for="contentTwo">Contenido Dos</label>
-                                <input class="form-control" type="text" id="contentTwo" name="content[0][two]" required
-                                    autocomplete="off">
-                            </div>
+
                         </div>
                         <div class="form-group row mb-3">
                             <div class="col-6">
@@ -182,27 +172,52 @@
                             </div>
                         </div>
                         <div class="form-group row mb-3">
+                            <h3>Lista de Servicios</h3>
+                            <label class="col-form-label col-sm-3" for="firstS">Primer Servicio</label>
+                            <div class="col-9 mb-3">
+                                <input class="form-control" type="text" id="firstS" name="firstS" required
+                                    autocomplete="off">
+                            </div>
+                            <label class="col-form-label col-sm-3" for="secondS">Segundo Servicio</label>
+                            <div class="col-9 mb-3">
+                                <input class="form-control" type="text" id="secondS" name="secondS" required
+                                    autocomplete="off">
+                            </div>
+                            <label class="col-form-label col-sm-3" for="thirdS">Tercer Servicio</label>
+                            <div class="col-9 mb-3">
+                                <input class="form-control" type="text" id="thirdS" name="thirdS" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-12">
+                                <label for="contact">Texto de contacto</label>
+                                <input class="form-control" type="text" id="contact" name="contact" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <h3>Links de Contacto</h3>
                             <div class="col-6">
-                                <label for="date">Fecha</label>
-                                <input class="form-control" type="date" id="date" name="date" required
+                                <label for="home">Pagina Principal</label>
+                                <input class="form-control" type="text" id="home" name="home" required
                                     autocomplete="off">
                             </div>
                             <div class="col-6">
-                                <label for="estado">Estado</label>
-                                <input class="form-control" type="text" id="estado" name="estado" required
+                                <label for="contactLink">Pagina de Contacto</label>
+                                <input class="form-control" type="text" id="contactLink" name="contactLink" required
                                     autocomplete="off">
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer footerm">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                        id="btnReset">Cerrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnReset">Cerrar</button>
                     <button type="submit" class="btnc btn" id="btnEdit" data-bs-dismiss="modal">Realizar
                         cambios</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script type="module" src="/assets/js/main-admin.js"></script>
     <script type="module" src="/assets/js/servicesCRUD.js"></script>

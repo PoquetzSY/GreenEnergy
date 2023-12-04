@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkname = window.location.pathname;
     console.log(linkname)
     if (linkname === '/') {
-        loadServices('/assets/json/services.json', 4);
+        loadServices(4);
         loadProjects(3)
     } else {
-        loadServices('/assets/json/services.json');
+        loadServices();
         loadProjects()
     }
 

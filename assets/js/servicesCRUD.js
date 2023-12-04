@@ -4,7 +4,7 @@ const formulario = document.getElementById('servicesForm');
 const formularioEdit = document.getElementById('servicesFormEdit');
 const servicesContainer = document.getElementById('showServices')
 let id = ""
-    
+
 window.addEventListener('DOMContentLoaded', async () => {
     ServicesService.onGetServices((querySnapshot) => {
         let html = "";
@@ -76,13 +76,31 @@ formulario.addEventListener('submit', async (event) => {
     const contact = servicesForm['contact'].value;
     const home = servicesForm['home'].value;
     const contactLink = servicesForm['contactLink'].value;
-
-    try {
-        await ServicesService.createServices(name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink);
-        formulario.reset();
-        console.log('Documento agregado exitosamente')
-    } catch (e) {
-        console.error("Error al agregar el documento: ", e);
+    if (
+        name.trim() === '' ||
+        heroImage.trim() === '' ||
+        thumbnailImage.trim() === '' ||
+        subImage.trim() === '' ||
+        title.trim() === '' ||
+        contentP.trim() === '' ||
+        subtitle.trim() === '' ||
+        subcontent.trim() === '' ||
+        firstS.trim() === '' ||
+        secondS.trim() === '' ||
+        thirdS.trim() === '' ||
+        contact.trim() === '' ||
+        home.trim() === '' ||
+        contactLink.trim() === ''
+    ) {
+        alert('Por favor, complete todos los campos.');
+    } else {
+        try {
+            await ServicesService.createServices(name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink);
+            formulario.reset();
+            console.log('Documento agregado exitosamente')
+        } catch (e) {
+            console.error("Error al agregar el documento: ", e);
+        }
     }
 });
 
@@ -103,16 +121,34 @@ document.getElementById('btnEdit').addEventListener('click', async (event) => {
     const contact = servicesFormEdit['contact'].value;
     const home = servicesFormEdit['home'].value;
     const contactLink = servicesFormEdit['contactLink'].value;
-
-    try {
-        await ServicesService.updateService(id, { name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink });
-        formularioEdit.reset();
-        console.log('Documento actualizado correctamente')
-    } catch (e) {
-        console.error("Error al actualizar el documento: ", e);
+    if (
+        name.trim() === '' ||
+        heroImage.trim() === '' ||
+        thumbnailImage.trim() === '' ||
+        subImage.trim() === '' ||
+        title.trim() === '' ||
+        contentP.trim() === '' ||
+        subtitle.trim() === '' ||
+        subcontent.trim() === '' ||
+        firstS.trim() === '' ||
+        secondS.trim() === '' ||
+        thirdS.trim() === '' ||
+        contact.trim() === '' ||
+        home.trim() === '' ||
+        contactLink.trim() === ''
+    ) {
+        alert('Por favor, complete todos los campos.');
+    } else {    
+        try {
+            await ServicesService.updateService(id, { name, heroImage, thumbnailImage, subImage, title, contentP, subtitle, subcontent, firstS, secondS, thirdS, contact, home, contactLink });
+            formularioEdit.reset();
+            console.log('Documento actualizado correctamente')
+        } catch (e) {
+            console.error("Error al actualizar el documento: ", e);
+        }
     }
 });
 
-document.getElementById('btnReset').addEventListener('click', () =>{
+document.getElementById('btnReset').addEventListener('click', () => {
     formularioEdit.reset()
 })

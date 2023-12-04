@@ -1,22 +1,31 @@
-export async function loadServices(archivoJSON, limit) {
-    try {
-        const response = await fetch(archivoJSON);
-        const jsonData = await response.json();
+import { db } from "./services/firebase.js";
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
-        mostrarServicios(jsonData, limit);
+const servicesCollection = collection(db, 'Servicios');
+
+export async function loadServices(limit) {
+    try {
+        const querySnapshot = await getDocs(servicesCollection);
+        const servicesData = [];
+
+        querySnapshot.forEach((doc) => {
+            const service = { id: doc.id, ...doc.data() };
+            servicesData.push(service);
+        });
+
+        mostrarServicios(servicesData, limit);
     } catch (error) {
-        console.error('Error al cargar el archivo JSON:', error);
+        console.error('Error al cargar los servicios desde Firestore:', error);
     }
 }
 
 function mostrarServicios(data, limit = Infinity) {
     const container = document.getElementById("catalogContainer");
 
-    const serviciosMostrados = Math.min(limit, data.services.length);
+    const serviciosMostrados = Math.min(limit, data.length);
 
     for (let i = 0; i < serviciosMostrados; i++) {
-        const service = data.services[i];
-        const nombreCodificado = encodeURIComponent(service.name);
+        const service = data[i];
         const cardCol = document.createElement('div');
         cardCol.classList.add('col-3', 'd-flex', 'justify-content-center');
         cardCol.innerHTML = `
@@ -28,7 +37,7 @@ function mostrarServicios(data, limit = Infinity) {
                         <h6 style="color: #9acc77;">Servicios</h6>
                     </div>
                     <h3>${service.name}</h3>
-                    <a href="/view/services-page.html?servicio=${nombreCodificado}" class="btn btn-outline-success">Ver más</a>
+                    <a href="/view/services-page.html?servicio=${service.id}" class="btn btn-outline-success">Ver más</a>
                 </div>
             </div>
         `;

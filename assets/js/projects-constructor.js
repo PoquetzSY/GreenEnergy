@@ -41,7 +41,7 @@ function mostrarDetallesProyecto(data) {
                 <div class="col-md-4 text-center align-self-center">
                     <div class="lc-block bordep ">
                         <div editable="rich">
-                            <p class="display-4 text-secondary" id="proyecto-estado">${data.estado}</p>
+                            <p class="display-4 text-secondary">${data.estado}</p>
                         </div>
                     </div>
                 </div>

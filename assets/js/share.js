@@ -1,5 +1,5 @@
 import { calcularHuellaDia, obtenerRespuestas, reiniciarFormulario } from '/assets/js/calculadora.js';
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { collection, addDoc, Timestamp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 import { db } from './services/firebase.js';
 
 export function iniciarCompartirHuella() {
@@ -40,6 +40,7 @@ export async function enviarDatosAFirebase(huellaCarbonoDia, estadoSeleccionado)
         const docRef = await addDoc(huellasCollection, {
             huellaCarbono: huellaCarbonoDia,
             estado: estadoSeleccionado,
+            date: Timestamp.now()
         });
         console.log('Datos enviados correctamente a Firebase: ', docRef.id);
     } catch (error) {

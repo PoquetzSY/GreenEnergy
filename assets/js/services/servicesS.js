@@ -1,4 +1,4 @@
-import { collection, addDoc, onSnapshot, doc, deleteDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+import { collection, addDoc, onSnapshot, doc, deleteDoc, getDoc, updateDoc, Timestamp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 import { db } from './firebase.js'
 
 export class ServicesService {
@@ -24,6 +24,7 @@ export class ServicesService {
                 }
             ],
             contact: contact,
+            date: Timestamp.now(),
             links: [
                 {
                     home: home,
