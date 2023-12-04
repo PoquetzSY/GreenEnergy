@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Inicia Sesion</title>
     <link rel="icon" href="/assets/img/icon.png">
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,24 +17,20 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-between p-3 mt-4">
-        <div class="col-6 p-5" style="text-align: center;">
-            <h3>Ultimas huellas registradas</h3>
-            <ul id="huellas" class="dashList list-group list-group-flush list-group-numbered"></ul>
-        </div>
-        <div class="col-6 p-5" style="text-align: center;">
-            <h3>Ultimos proyectos registrados</h3>
-            <ul id="proyectos" class="dashList list-group list-group-flush list-group-numbered"></ul>
-        </div>
-    </div>
-    <div class="d-flex justify-content-center mb-5" style="text-align: center;">
-        <div class="col-4">
-            <h3>Ultimos servicios registrados</h3>
-            <ul id="servicios" class="dashList list-group list-group-flush list-group-numbered"></ul>
-        </div>
+    <section class="formulario-iniciosesion">
+        <h1>¡Bienvenido de nuevo!</h1>
+        <form id="formulario-sesion">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"><br><br>
 
-    </div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password"><br><br>
 
+            <input type="submit" id="btn-login" value="Iniciar sesión">
+        </form>
+        <a href="crearcuenta.html">Crear una nueva cuenta</a>
+    </section>
+    <script type="module" src="/assets/js/auth/login.js"></script>
     <script type="module" src="/assets/js/main-admin.js"></script>
 </body>
 

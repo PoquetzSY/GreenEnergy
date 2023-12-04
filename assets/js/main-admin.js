@@ -1,4 +1,5 @@
-import { dao } from "./services/dashboardS.js";
+import { dashboard } from "./services/dashboardS.js";
+import {ManageAccount} from "./auth/authenticate.js"
 
 const headerContainer = document.createElement('header');
 const containerh = document.getElementById('huellas');
@@ -21,18 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.insertBefore(headerContainer, document.body.firstChild);
     // Mostrar los últimos documentos de 'huellas'
-    dao.getLatestDocuments('huellas', (latestDocuments) => {
+    dashboard.getLatestDocuments('huellas', (latestDocuments) => {
         renderLatestDocuments('huellas', latestDocuments, containerh);
     });
-    dao.getLatestDocuments('Proyectos', (latestDocuments) => {
+    dashboard.getLatestDocuments('Proyectos', (latestDocuments) => {
         renderLatestDocuments('Proyectos', latestDocuments, containerp);
     });
-    dao.getLatestDocuments('Servicios', (latestDocuments) => {
+    dashboard.getLatestDocuments('Servicios', (latestDocuments) => {
         renderLatestDocuments('Servicios', latestDocuments, containers);
     });
+
+    const linkname = window.location.pathname;
+    console.log(linkname)
+    if (!linkname === '/view/admin/g-admin.html') {
+        document.getElementById("logout").style.display = "block";
+        console.log('prueba')
+    } else {
+        document.getElementById("logout").style.display = "none";
+    }
 });
-
-
 
 // Función para renderizar los datos en el contenedor
 function renderLatestDocuments(collectionName, documents, contenedor) {

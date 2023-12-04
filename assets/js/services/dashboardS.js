@@ -1,7 +1,7 @@
 import { db } from './firebase.js'
 import { onSnapshot, collection, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
-const dao = {
+const dashboard = {
     async getLatestDocuments(collectionName, callback) {
         try {
             const q = query(collection(db, collectionName), orderBy('date', 'desc'), limit(5));
@@ -21,4 +21,4 @@ const dao = {
     },
 };
 
-export { dao };
+export { dashboard };

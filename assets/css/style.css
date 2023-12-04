@@ -335,6 +335,13 @@ ul {
 .listPa li{
   background-color: var(--modalbg-ge)
 }
+.dashList, .dashList li{
+  background-color: var(--modalbg-ge);
+}
+.dashList{
+  height: 363px;
+  border-radius: var(--border-r-ge);
+}
 @media (max-width: 800px) {
   #miLista{
     width: 90%;
