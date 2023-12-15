@@ -23,7 +23,7 @@ GreEnergy es una plataforma web diseñada para fomentar la adopción de energía
 
 ## Instrucciones de Configuración y Despliegue
 
-1. Clona el repositorio: `git clone https://github.com/tu_usuario/tu_proyecto.git`
+1. Clona el repositorio: `git clone https://github.com/PoquetzSY/GreenEnergy.git`
 2. Abre el archivo `index.html` en tu navegador.
 
 ## Configuración de Firebase
