@@ -1,10 +1,10 @@
-# GreEnergy - Plataforma de Energía Limpia
+# Green Energy - Plataforma de Energía Limpia
 
 ![GreEnergy Logo](https://greenergy.netlify.app/assets/img/icon.png)
 
 ## Descripción del Proyecto
 
-GreEnergy es una plataforma web diseñada para fomentar la adopción de energía limpia y sostenible en México. Conecta a investigadores, empresas, gobiernos y organizaciones interesados en promover la investigación y adopción de tecnologías de energía limpia en el país.
+Green Energy es una plataforma web diseñada para fomentar la adopción de energía limpia y sostenible en México. Conecta a investigadores, empresas, gobiernos y organizaciones interesados en promover la investigación y adopción de tecnologías de energía limpia en el país.
 
 ## Características Principales
 
